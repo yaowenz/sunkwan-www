@@ -12,12 +12,10 @@
 			<img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" width="100" />
 			<p><a class="beian" href="http://www.miitbeian.gov.cn">沪ICP备10027157号</a>&nbsp;&nbsp;上海上坤实业投资有限公司
 		</div>
-		<div class="hotline">
+		<div class="qrcode hotline">
+			<img style="margin-bottom:5px" src="<?php echo get_template_directory_uri()?>/images/wx-qrcode.png" valign="middle" height="100" />
 			<p class="title">客户服务热线：</p>
 			<p class="number">400-015-2220</p>
-		</div>
-		<div class="qrcode">
-			<img src="<?php echo get_template_directory_uri()?>/images/wx-qrcode.png" valign="middle" height="100" />
 		</div>
 	</div>
 </div>

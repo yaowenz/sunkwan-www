@@ -8,7 +8,7 @@
 	<div class="article">
 		<div class="career">
 			<h2 id="section-recruit-social-scroll"><span></span>社会招聘</h2>
-			<p class="contact">有意者请将简历发送至 baimei@sunkwan.com.cn，或联系 021-60716181 * 8081， 白经理</p>
+			<p class="contact">有意者请将简历发送至 hr@sunkwan.com.cn，或联系 021-60716181 * 8081， 白经理</p>
 			<table>
 			<thead>
 				<tr>

@@ -125,6 +125,9 @@ function playVideo() {
 			<img class="title-coming" src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
 		</li>
 		<li>
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"></div>
+		</li>	
+		<li>
 			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"></div>
 		</li>	
 		<li>

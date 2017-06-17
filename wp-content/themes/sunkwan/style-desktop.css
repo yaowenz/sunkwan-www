@@ -600,10 +600,6 @@ p {
   float: left;
   width: 200px; }
 
-.content.about .section .manager .photo img {
-  -webkit-box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.2);
-  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.2); }
-
 .content.about .section .manager .description {
   font-size: 14px; }
 
@@ -1108,8 +1104,7 @@ p {
 #footer .qrcode {
   position: absolute;
   right: 40px;
-  top: 20px;
-  background: white; }
+  top: 20px; }
 
 #footer .qrcode img {
   border: 5px solid white; }

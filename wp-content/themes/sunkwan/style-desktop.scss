@@ -233,7 +233,6 @@ p {
 		.text .subtitle {margin-bottom:10px;font-size:20px;color:$red}
 		.manager {margin-bottom:30px;border-bottom:1px solid #eee;padding-bottom:30px;min-height:180px}
 		.manager .photo {float:left;width:200px}
-		.manager .photo img {box-shadow: -5px 5px 30px rgba(0,0,0,0.2)}	
 		.manager .description {font-size:14px}		
 		.manager .name {color:$red;font-size:20px;margin-bottom:30px}
 		.manager {line-height:1.8}
@@ -425,6 +424,6 @@ p {
 	.hotline {position:absolute;top:135px;right:0px}
 	.hotline .title {color:#333;font-size:16px}
 	.hotline .number {color:$red;font-size:24px}	
-	.qrcode {position:absolute;right:40px;top:20px;background:white}
+	.qrcode {position:absolute;right:40px;top:20px;}
 	.qrcode img {border:5px solid white}
 }
