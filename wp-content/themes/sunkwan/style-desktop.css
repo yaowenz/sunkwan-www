@@ -98,7 +98,7 @@ p {
   box-sizing: content-box; }
 
 #nav .menu > div > a {
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
   text-decoration: none;
   color: #333;
@@ -528,7 +528,7 @@ p {
 #index-slides .bxslider li {
   min-width: 1200px;
   wdith: 100%;
-  min-height: 750px;
+  min-height: 550px;
   overflow: hidden; }
 
 #index-slides .slider-1 img {
