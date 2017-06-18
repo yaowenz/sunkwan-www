@@ -837,6 +837,9 @@ p {
   margin-top: 15px;
   line-height: 2; }
 
+.content.bids .article.side {
+  border: none !important; }
+
 .content.bids table tr > td:first-child {
   width: 250px;
   font-weight: bold; }
@@ -846,18 +849,6 @@ p {
 
 .content.recruit .article {
   padding: 0px 30px; }
-
-.content.recruit .article .preface {
-  font-size: 15px; }
-
-.content.recruit .article .preface p {
-  text-indent: 28px;
-  line-height: 1.8; }
-
-.content.recruit .article .preface img {
-  margin-top: 15px;
-  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
 
 .content.recruit .article > div {
   padding-bottom: 50px;
@@ -885,8 +876,8 @@ p {
   background: #D6000F; }
 
 .content.recruit .article .contact {
-  font-size: 14px;
-  color: #999; }
+  color: #666;
+  margin-top: 25px; }
 
 .content.recruit .article table {
   margin-top: 20px;
@@ -898,6 +889,21 @@ p {
 
 .content.recruit .article table tr.odd {
   background-color: #fafafa; }
+
+.content.recruit .article table tbody tr td:first-child {
+  font-weight: bold; }
+
+.content.recruit.graduation .article.preface {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.content.recruit.graduation .article.preface p {
+  line-height: 2; }
+
+.content.recruit.graduation .article ul li {
+  list-style: disc;
+  line-height: 2;
+  color: #666; }
 
 /** Single Article **/
 .content.single {

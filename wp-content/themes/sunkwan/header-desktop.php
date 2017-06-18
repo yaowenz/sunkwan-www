@@ -39,7 +39,7 @@ window.onhashchange=function(){
 				<a>核心业务</a>
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('real-estates')?>">地产开发</a></li>
-					<li><a href="<?php echo site_url('')?>">商业资产管理</a></li>
+					<li><a href="<?php echo site_url('commercial-assets')?>">商业资产管理</a></li>
 					<li><a href="<?php echo site_url('')?>">地产基金</a></li>
 				</ul>
 			</div>
@@ -51,8 +51,8 @@ window.onhashchange=function(){
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('recruit')?>">用人理念</a></li>
 					<li><a href="<?php echo site_url('employees')?>">员工活动</a></li>
-					<li><a href="<?php echo site_url('recruit')?>/#section-recruit-social">社会招聘</a></li>
-					<li><a href="<?php echo site_url('recruit')?>">校园招聘</a></li>					
+					<li><a href="<?php echo site_url('recruit')?>">社会招聘</a></li>
+					<li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li>					
 				</ul>
 			</div>
 			<div>

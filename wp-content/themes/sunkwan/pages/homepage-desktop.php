@@ -162,7 +162,11 @@ function playVideo() {
 				<select>
 					<option>前往城市...</option>
 					<option>上海</option>
-					<option>苏州</option>
+					<option>苏州</option>					
+					<option>深圳</option>
+					<option>合肥</option>
+					<option>杭州</option>
+					<option>南京</option>
 				</select>
 				<div class="replace img"></div>
 				<p class="title">全国布局</p>			
