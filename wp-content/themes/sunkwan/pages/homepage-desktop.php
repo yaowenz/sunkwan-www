@@ -35,39 +35,39 @@ jQuery(function($) {
       targets: '#index-slides .slider-1 .title-wei',
       opacity: 1,     
       easing: 'linear',
-      duration: 500,
+      duration: 250,
     })
     .add({
       targets: '#index-slides .slider-1 .title-yiju',
       opacity: 1,     
       easing: 'linear',
-      duration: 1000
+      duration: 500
     })
     .add({
       targets: '#index-slides .slider-1 .title-er',
       opacity: 1,     
       easing: 'linear',
-      duration: 200      
+      duration: 100      
     })
     .add({
         targets: '#index-slides .slider-1 .title-lai',
         opacity: 1,     
         easing: 'linear',
-        duration: 1000        
+        duration: 500        
      })
      .add({
         targets: '#index-slides .slider-1 .title-coming',
         translateX: -100,
         opacity: 1,     
         easing: 'easeOutCubic',
-        duration: 1000        
+        duration: 500        
      })
      .add({
     	 targets: '#index-slides .slider-1 .bg-image',
     	 scale: 1.05,
     	 opacity: 1,    	
          offset: 0,
-         duration: 10000,
+         duration: 2000,
          easing: 'easeOutCubic'
      });
     
@@ -81,7 +81,7 @@ jQuery(function($) {
 		autoStart: true,
 		auto: true,
 		speed: 1000,
-		pause: 8000,		
+		pause: 3000,		
 		onSlideAfter: function ($slideElement, oldIndex, newIndex) {			
 			if(newIndex == 0) {
 				sliderAnimation1.restart();
@@ -97,7 +97,13 @@ jQuery(function($) {
         		sliderAnimation1.play();
 			}
 		}
-  	});  	  
+  	}); 
+
+  	// 城市切换
+  	$('.card.layer.projects select').change(function() {
+  		location.href = '<?php echo site_url('real-estates') ?>';  	
+  	});
+  	 	  
 });
 
 function playVideo() {
@@ -125,10 +131,10 @@ function playVideo() {
 			<img class="title-coming" src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
 		</li>
 		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"></div>
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
 		</li>	
 		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"></div>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"></div>
 		</li>	
 		<li>
 			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');"></div>
@@ -144,7 +150,7 @@ function playVideo() {
 				<div class="card-icon">
 					<img src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
 				</div>
-				<div class="replace img"></div>
+				<div class="replace img"><a href="<?php echo site_url('about')?>/#section-spirit"></a></div>
 			</div>
 		</li>
 		<li class="card-item">
@@ -162,7 +168,7 @@ function playVideo() {
 				<select>
 					<option>前往城市...</option>
 					<option>上海</option>
-					<option>苏州</option>					
+					<option>苏州</option>
 					<option>深圳</option>
 					<option>合肥</option>
 					<option>杭州</option>

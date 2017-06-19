@@ -145,6 +145,7 @@ p {
 	
 	.layer {
 		.replace.img {background-size:cover;background-repeat:no-repeat;background-position:center;opacity:0;position:absolute;height:100%;width:100%;top:0px;left:100%;transition:all .5s cubic-bezier(.4,0,.2,1),z-index 0s .12s;z-index:-100}
+		.replace.img a {display:block;width:100%;height:100%}
 		& {height:100%;padding:15px;box-sizing:border-box;position:relative}
 		&.culture {background:$red;color:white;z-index:1}
 		&.culture .replace.img {background-image:url('images/index-culture.jpg')}
@@ -204,6 +205,7 @@ p {
 /** index slider **/
 #index-slides {
 	.bg-image {width:100%;height:100%;position:absolute;left:0px;top:0px;box-shadow:inset 0px -10px 50px black;background-size:cover;background-repeat:no-repeat;background-position:center;}
+	.bg-image a {display:block;width:100%;height:100%}
 	.bx-wrapper {padding:0px;border:none;margin:0px;min-width:1200px}
 	.bx-pager {position:absolute;padding-top:0px;bottom:30px;z-index:100}
 	.bx-wrapper .bx-pager.bx-default-pager a.active {width:25px!important;opacity:0.8}	
@@ -216,8 +218,8 @@ p {
 		.bg-image {opacity:0.8;}
 		.title-wei {right:650px;top:200px}
 		.title-yiju {right:555px;top:202px}
-		.title-er {right:450px;top:200px}
-		.title-lai {right:300px;top:200px}
+		.title-er {right:510px;top:202px}
+		.title-lai {right:460px;top:200px}
 		.title-coming {right:330px;top:250px}
 	}
 }
@@ -385,8 +387,7 @@ p {
 		& {padding-left:0px}
 		ul {padding-left:10px}
 		li {color:$red;font-size:18px;line-height:2.0;margin-bottom:30px;padding:15px 15px;transition: all 0.5s}
-		li:hover {background-color:#f3f3f3;}
-		li:hover .thumb {box-shadow:0px 0px 15px rgba(128,128,128,0.5)}
+		li:hover {background-color:#f3f3f3;}	
 		li a {color:#333;margin-right:30px}
 		li a:hover {color:$red}
 		li .entry-date {color:#999;font-size:14px}

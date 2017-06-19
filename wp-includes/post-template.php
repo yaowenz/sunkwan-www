@@ -230,7 +230,6 @@ function get_the_guid( $post = 0 ) {
 function the_content( $more_link_text = null, $strip_teaser = false) {
 	$content = get_the_content( $more_link_text, $strip_teaser );
 
-
 	/**
 	 * Filters the post content.
 	 *
@@ -239,7 +238,6 @@ function the_content( $more_link_text = null, $strip_teaser = false) {
 	 * @param string $content Content of the current post.
 	 */
 	$content = apply_filters( 'the_content', $content );
-	print_r($content);
 	$content = str_replace( ']]>', ']]&gt;', $content );
 	echo $content;
 }
@@ -400,15 +398,15 @@ function get_the_excerpt( $post = null ) {
 }
 
 /**
- * Whether post has excerpt.
+ * Whether the post has a custom excerpt.
  *
  * @since 2.3.0
  *
- * @param int|WP_Post $id Optional. Post ID or post object.
- * @return bool
+ * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global $post.
+ * @return bool True if the post has a custom excerpt, false otherwise.
  */
-function has_excerpt( $id = 0 ) {
-	$post = get_post( $id );
+function has_excerpt( $post = 0 ) {
+	$post = get_post( $post );
 	return ( !empty( $post->post_excerpt ) );
 }
 
@@ -795,6 +793,7 @@ function post_password_required( $post = null ) {
 		return apply_filters( 'post_password_required', true, $post );
 	}
 
+	require_once ABSPATH . WPINC . '/class-phpass.php';
 	$hasher = new PasswordHash( 8, true );
 
 	$hash = wp_unslash( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] );
@@ -1128,7 +1127,7 @@ function wp_dropdown_pages( $args = '' ) {
 }
 
 /**
- * Retrieve or display list of pages in list (li) format.
+ * Retrieve or display list of pages (or hierarchical post type items) in list (li) format.
  *
  * @since 1.5.0
  * @since 4.7.0 Added the `item_spacing` argument.
