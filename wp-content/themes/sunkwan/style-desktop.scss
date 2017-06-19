@@ -95,12 +95,13 @@ p {
 	.title {color:#777;font-size:24px;font-weight:bold;line-height:1.5}
 	.title.eng {color:white;font-size:28px}
 }
-.banner.about {box-shadow:inset -5px 5px 30px rgba(0,0,0,.2);background-image:url('images/banner-about.jpg');}
+.banner.about, .banner.commercial-assets {box-shadow:inset -5px 5px 30px rgba(0,0,0,.2);background-image:url('images/banner-about.jpg');}
 .banner.contact {background-image:url('images/banner-contact.jpg');}
 .banner.contact .wrapper {text-align:right;padding-right:30px;padding-top:50px}
 .banner.bids {background-image:url('images/banner-bids.jpg')}
 .banner.team {background-image:url('images/banner-team.jpg')}
 .banner.news {background-image:url('images/banner-news.jpg')}
+.banner.fund {background-image:url('images/banner-fund.jpg');}
 
 
 .triangle-right {
@@ -225,7 +226,7 @@ p {
 }
 
 /** about **/
-.content.about {
+.content.about, .content.commercial-assets {
 	.section {
 		& {clear:both;float:none;margin-bottom:100px}	
 		.title {float:left;width:25%;font-size:20px;font-weight:bold;}
@@ -352,6 +353,22 @@ p {
 		&.preface p {line-height:2}
 		ul li {list-style:disc;line-height:2;color:#666}
 	}	
+}
+
+/* 地产基金 */
+.content.fund {
+	.title {font-size:24px;text-align:center}
+	.propaganda {padding:10px;display:inline-block;margin:30px 0px 20px 0px;background:$red;color:white;font-size:16px}
+	table {text-align:center;margin-top:30px;margin-bottom:100px}
+	table td {padding:15px;line-height:2}
+	table th {font-size:20px} 
+}
+
+/* 用人理念 */
+.content.philosophy {
+	.text {
+		.propaganda {color:$red;font-size:18px}
+	}
 }
 
 /** Single Article **/

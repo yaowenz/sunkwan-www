@@ -1,5 +1,5 @@
-<div class="banner about cover"></div>
-<div class="primary content about">
+<div class="banner commercial-assets cover"></div>
+<div class="primary content commercial-assets">
 	<div class="breadcrumb">
 		<a href="<?php echo site_url();?>">首页</a>
 		<span class="triangle-right"></span>

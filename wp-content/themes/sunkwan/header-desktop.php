@@ -40,7 +40,7 @@ window.onhashchange=function(){
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('real-estates')?>">地产开发</a></li>
 					<li><a href="<?php echo site_url('commercial-assets')?>">商业资产管理</a></li>
-					<li><a href="<?php echo site_url('')?>">地产基金</a></li>
+					<li><a href="<?php echo site_url('fund')?>">地产基金</a></li>
 				</ul>
 			</div>
 			<div>
@@ -49,7 +49,7 @@ window.onhashchange=function(){
 			<div>
 				<a href="<?php echo site_url('recruit')?>">加入我们</a>
 				<ul class="submenu">
-					<li><a href="<?php echo site_url('recruit')?>">用人理念</a></li>
+					<li><a href="<?php echo site_url('philosophy')?>">用人理念</a></li>
 					<li><a href="<?php echo site_url('employees')?>">员工活动</a></li>
 					<li><a href="<?php echo site_url('recruit')?>">社会招聘</a></li>
 					<li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li>					

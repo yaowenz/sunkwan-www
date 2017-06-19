@@ -175,7 +175,7 @@ p {
   color: white;
   font-size: 28px; }
 
-.banner.about {
+.banner.about, .banner.commercial-assets {
   -webkit-box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.2);
   box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.2);
   background-image: url("images/banner-about.jpg"); }
@@ -196,6 +196,9 @@ p {
 
 .banner.news {
   background-image: url("images/banner-news.jpg"); }
+
+.banner.fund {
+  background-image: url("images/banner-fund.jpg"); }
 
 .triangle-right {
   display: block;
@@ -569,22 +572,22 @@ p {
   top: 250px; }
 
 /** about **/
-.content.about .section {
+.content.about .section, .content.commercial-assets .section {
   clear: both;
   float: none;
   margin-bottom: 100px; }
 
-.content.about .section .title {
+.content.about .section .title, .content.commercial-assets .section .title {
   float: left;
   width: 25%;
   font-size: 20px;
   font-weight: bold; }
 
-.content.about .section .title .eng {
+.content.about .section .title .eng, .content.commercial-assets .section .title .eng {
   font-size: 16px;
   color: #999; }
 
-.content.about .section .text {
+.content.about .section .text, .content.commercial-assets .section .text {
   float: right;
   width: 75%;
   border-left: 3px solid #D6000F;
@@ -592,54 +595,54 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.content.about .section .text p {
+.content.about .section .text p, .content.commercial-assets .section .text p {
   margin-bottom: 30px; }
 
-.content.about .section .text .subtitle {
+.content.about .section .text .subtitle, .content.commercial-assets .section .text .subtitle {
   margin-bottom: 10px;
   font-size: 20px;
   color: #D6000F; }
 
-.content.about .section .manager {
+.content.about .section .manager, .content.commercial-assets .section .manager {
   margin-bottom: 30px;
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
   min-height: 180px; }
 
-.content.about .section .manager .photo {
+.content.about .section .manager .photo, .content.commercial-assets .section .manager .photo {
   float: left;
   width: 200px; }
 
-.content.about .section .manager .description {
+.content.about .section .manager .description, .content.commercial-assets .section .manager .description {
   font-size: 14px; }
 
-.content.about .section .manager .name {
+.content.about .section .manager .name, .content.commercial-assets .section .manager .name {
   color: #D6000F;
   font-size: 20px;
   margin-bottom: 30px; }
 
-.content.about .section .manager {
+.content.about .section .manager, .content.commercial-assets .section .manager {
   line-height: 1.8; }
 
-.content.about .section ul {
+.content.about .section ul, .content.commercial-assets .section ul {
   padding-left: 20px; }
 
-.content.about .section ul li {
+.content.about .section ul li, .content.commercial-assets .section ul li {
   padding-left: 15px;
   list-style: square outside;
   line-height: 1.5; }
 
-.content.about .section.history .row {
+.content.about .section.history .row, .content.commercial-assets .section.history .row {
   margin-bottom: 30px; }
 
-.content.about .section.history .row p {
+.content.about .section.history .row p, .content.commercial-assets .section.history .row p {
   margin-bottom: 10px; }
 
-.content.about .section.history .year {
+.content.about .section.history .year, .content.commercial-assets .section.history .year {
   float: left;
   width: 150px; }
 
-.content.about .section.history .year span {
+.content.about .section.history .year span, .content.commercial-assets .section.history .year span {
   background-color: #D6000F;
   color: white;
   display: inline-block;
@@ -648,7 +651,7 @@ p {
   border: 1px solid #D6000F;
   font-size: 14px; }
 
-.content.about .section.history .events {
+.content.about .section.history .events, .content.commercial-assets .section.history .events {
   float: left;
   border-bottom: 1px dotted #ccc; }
 
@@ -914,6 +917,36 @@ p {
   list-style: disc;
   line-height: 2;
   color: #666; }
+
+/* 地产基金 */
+.content.fund .title {
+  font-size: 24px;
+  text-align: center; }
+
+.content.fund .propaganda {
+  padding: 10px;
+  display: inline-block;
+  margin: 30px 0px 20px 0px;
+  background: #D6000F;
+  color: white;
+  font-size: 16px; }
+
+.content.fund table {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px; }
+
+.content.fund table td {
+  padding: 15px;
+  line-height: 2; }
+
+.content.fund table th {
+  font-size: 20px; }
+
+/* 用人理念 */
+.content.philosophy .text .propaganda {
+  color: #D6000F;
+  font-size: 18px; }
 
 /** Single Article **/
 .content.single {
