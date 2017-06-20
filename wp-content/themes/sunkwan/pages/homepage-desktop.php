@@ -103,6 +103,14 @@ jQuery(function($) {
   	$('.card.layer.projects select').change(function() {
   		location.href = '<?php echo site_url('real-estates') ?>';  	
   	});
+
+  	// 新闻切换
+  	$('.news-category a').click(function() {
+  		$('.news-category a').removeClass('active');
+  		$(this).addClass('active');
+  		$('ul.news-list').removeClass('active');
+  		$('ul.news-list.tab-' + $(this).data('tab')).addClass('active');
+  	});
   	 	  
 });
 
@@ -185,13 +193,34 @@ function playVideo() {
 			<p class="title">新闻动态</p>
 			<p class="title eng">News</p>
 			<p class="news-category">
-				<a class="active">集团新闻</a>
-				<a>媒体报道</a>
+				<a data-tab="news" class="active">集团新闻</a>
+				<a data-tab="events">最新活动</a>
 			<p>
-			<ul class="news-list">
-				<li><span class="title">“筑梦同行 一路有你” 2017上坤业主踏春活动</span><span>2017.03.21</span></li>
-				<li><span class="title">大道致远/上坤第二届供应商大会圆满召开</span><span>2017.02.21</span></li>
-				
+			<ul class="news-list tab-news active">
+			<?php 
+				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 2] ); 
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) :
+						$the_query->the_post();
+			?>
+			<li><a href="<?php the_permalink()?>"><span class="title"><?php the_title();?></span></a><span><?php the_date();?></span></li>
+			<?php 					
+					endwhile;					
+				endif;
+			?>				
+			</ul>
+			<ul class="news-list tab-events">
+			<?php 
+				$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 2] ); 
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) :
+						$the_query->the_post();
+			?>
+			<li><a href="<?php the_permalink()?>"><span class="title"><?php the_title();?></span></a><span><?php the_date();?></span></li>
+			<?php 					
+					endwhile;					
+				endif;
+				wp_reset_postdata();?>	
 			</ul>
 		</div>
 	</div>

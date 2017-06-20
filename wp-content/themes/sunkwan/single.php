@@ -6,8 +6,15 @@ get_header();
 	<div class="breadcrumb">
 		<a href="<?php echo site_url();?>">首页</a>
 		<span class="triangle-right"></span>
-		<a><?php $categories = get_the_category(); echo $categories[0]->name; ?></a>
+		<?php 
+			$post = get_queried_object();
+			$terms = (get_the_terms($post, 'category'));
+			$term = $terms[count($terms)-1]; // If mutiple category, use the last one			
+		?>	
+		<a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name; ?></a>
 	</div>
+	
+	
 	<div class="article left">
 		<?php the_post();?>			
 		<h3 class="sub"><?php the_title();?></h3>

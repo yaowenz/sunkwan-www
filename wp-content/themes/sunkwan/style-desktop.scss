@@ -174,17 +174,18 @@ p {
 		.card-icon {margin-top:50px;text-align:right}
 	}
 	
-	.layer.news {
+	.layer.news {		
 		.news-list {
-			color:#333;padding-left:20px;margin-top:10px
+			color:#333;padding-left:20px;margin-top:10px;display:none
 		}
+		.news-list.active {display:block!important}
 		.news-list li {color:$red;margin-bottom:5px;list-style-type:square;list-style-position:outside}
 		.news-list .title {color:#333;font-weight:bold;font-size:14px}
 		.news-list .title:hover {cursor:pointer;color:$red}
 		.news-list span {display:block;font-size:12px;color:#666;font-weight:normal}
 		.news-category {
 			& {position:absolute;right:15px;top:20px;font-size:14px}
-			a {display:inline-block;padding:5px 10px;color:#999}
+			a {display:inline-block;padding:5px 10px;color:#999;cursor:pointer}
 			a.active {background-color:$red;color:white;font-weight:bold}
 		}
 	}
@@ -435,6 +436,15 @@ p {
 		.title {border-bottom:1px solid #ccc;padding-bottom:30px}
 		.triangle-bottom {border-top-color:$red;margin:20px auto}
 	}
+}
+
+/** Paging **/
+.nav-links {
+	& {text-align:center;border-top:1px dotted #ccc;margin-top:50px}
+	a {display:inline-block;padding:15px}
+	a:hover {text-decoration:underline;color:$red}
+	.page-numbers.current {font-weight:bold;color:#ccc}
+	
 }
 
 /** footer **/

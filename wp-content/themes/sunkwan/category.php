@@ -4,7 +4,8 @@
 	<div class="breadcrumb">
 		<a href="<?php echo site_url();?>">首页</a>
 		<span class="triangle-right"></span>
-		<a>新闻动态</a>
+		<?php $category = get_queried_object();	?>
+		<a href="<?php echo get_category_link($category)?>"><?php single_cat_title();?></a>
 	</div>
 	<div class="wrapper">		
 		<div class="article left">			
@@ -24,6 +25,7 @@
 			</div>
 			<?php 
 				the_posts_pagination(array(
+					'screen_reader_text' => ' ',
 					'prev_text'          => '上一页',
 					'next_text'			 => '下一页',								
 				));				

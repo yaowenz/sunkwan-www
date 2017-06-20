@@ -32,7 +32,7 @@ window.onhashchange=function(){
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('category/news')?>">新闻动态</a></li>
 					<li><a href="<?php echo site_url('magazine')?>">电子内刊</a></li>
-					<li><a href="<?php echo site_url('category/news')?>">最新活动</a></li>
+					<li><a href="<?php echo site_url('category/events')?>">最新活动</a></li>
 				</ul>
 			</div>
 			<div>
