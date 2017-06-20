@@ -26,6 +26,7 @@
 			</div>
 			<div class="text">			
 				<p>上坤极客公寓是上坤集团旗下专业为有梦想、有追求、不将就的城市青年打造的租赁型优住产品版块。上坤极客公寓的产品营造DNA源自于有态度的开发商“上坤置业”，上坤极客公寓坚持回归租赁公寓的基本面，追求的是居住的舒适感受与极致体验，希望用每个居住的建造细节、公共居住服务与社群服务平台满足城市青年的对家、对未来、对美好生活的想象与体验。上坤极客公寓持续完善产品开发与服务，目前已研发的模块化个性设计，已开发到3.0版本系列。从独立的操控厨房到餐厅使用空间尺度的合理性；从日式的榻榻米风到全景落地飘窗等都是此次极客公寓产品升级的亮点。</p>
+				<p>网址：<a style="text-decoration:underline" href="http://www.skgeek.com">http://www.skgeek.com</a></p>
 				<p><img src="<?php echo get_template_directory_uri()?>/images/commercial-assets-2.jpg" width="600" />
 			</div>
 			<div class="clearfix"></div>
