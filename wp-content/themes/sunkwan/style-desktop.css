@@ -999,7 +999,8 @@ p {
 .content.single .article.left .more li {
   color: #D6000F;
   list-style-type: disc;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.8; }
 
 .content.single .article.left .more li a {
   color: #333;
@@ -1106,6 +1107,26 @@ p {
 .content.project .article .triangle-bottom {
   border-top-color: #D6000F;
   margin: 20px auto; }
+
+.content.project .article .brief {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-align: center; }
+
+.content.project .article p {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 1.8; }
+
+.content.project .article p.aligncenter {
+  text-align: center; }
+
+.content.project .article p.w-1000 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /** Paging **/
 .nav-links {

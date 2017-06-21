@@ -29,7 +29,7 @@ jQuery(function($) {
 						<div class="content">上海63万方山水都会墅区大盘</div>
 					</div>
 				</div>
-				<div class="example">
+				<div class="example" data-loc="project-gytd">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-gytd.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
@@ -37,7 +37,7 @@ jQuery(function($) {
 						<div class="content">顾村公园旁生态社区</div>
 					</div>
 				</div>
-				<div class="example">
+				<div class="example" data-loc="project-xhs">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-xhs.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
@@ -53,7 +53,7 @@ jQuery(function($) {
 		<div class="section green">
 			<div class="title"><span></span>绿色建筑系</div>
 			<div class="row">				
-				<div class="example">
+				<div class="example" data-loc="project-hsw">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-hsw.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
@@ -76,7 +76,7 @@ jQuery(function($) {
 		<div class="section young">
 			<div class="title"><span></span>青年住宅系</div>
 			<div class="row">
-				<div class="example">
+				<div class="example" data-loc="project-yuecheng">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-yc.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
@@ -91,7 +91,7 @@ jQuery(function($) {
 		<div class="section commerical">
 			<div class="title"><span></span>社区商业系</div>
 			<div class="row">				
-				<div class="example">
+				<div class="example" data-loc="project-csgc">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-csgc.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>

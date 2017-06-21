@@ -33,7 +33,7 @@
 		</div>	
 		<div class="article side">
 			<div class="ad">
-				<img src="<?php echo get_template_directory_uri()?>/images/article-ad-right.jpg" />
+				<img src="<?php echo get_template_directory_uri()?>/images/ads/side-ad-1.jpg" />
 			</div>
 		</div>
 		<div class="clearfix"></div>

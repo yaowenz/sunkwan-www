@@ -384,7 +384,7 @@ p {
 			.title {background:#eee;position:relative;line-height:40px;display:inline-block;width:150px;padding-left:40px;font-size:20px;color:#666;margin-bottom:15px}
 			.title span {display:inline-block;position:absolute;left:0px;height:40px;width:30px;background:$red;}
 			ul {padding-left:20px}
-			li {color:$red;list-style-type:disc;font-size:16px}
+			li {color:$red;list-style-type:disc;font-size:16px;line-height:1.8}
 			li a {color:#333;margin-right:30px}
 			li a:hover {color:$red}
 			li .date {color:#999;font-size:14px}
@@ -435,6 +435,10 @@ p {
 		& {text-align:center}
 		.title {border-bottom:1px solid #ccc;padding-bottom:30px}
 		.triangle-bottom {border-top-color:$red;margin:20px auto}
+		.brief {font-size:20px;margin-bottom:50px;font-weight:bold;text-align:center}
+		p {text-align:left;margin-top:50px;font-size:16px;line-height:1.8}
+		p.aligncenter {text-align:center}
+		p.w-1000 {width:1000px;margin-left:auto;margin-right:auto}
 	}
 }
 

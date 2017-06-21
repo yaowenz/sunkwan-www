@@ -26,13 +26,23 @@ get_header();
 		<div class="more">
 			<div class="title"><span></span>更多新闻</div>
 			<ul>
-				<li><a href="#">“筑梦同行·一路有你”2017上坤业主踏春活动圆满举行</a><span class="date">2017-05-19</span></li>
+			<?php 
+				$the_query = new WP_Query(['category_name' => $term->slug, 'post_type' => 'post', 'posts_per_page' => 10, 'post__not_in' => [get_the_ID()]]); 
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) :
+						$the_query->the_post();
+			?>
+			<li><a href="<?php the_permalink()?>"><?php the_title();?></a><span class="date"><?php the_date();?></span></li>
+			<?php 					
+					endwhile;					
+				endif;
+			?>
 			</ul>
 		</div>		
 	</div>	
 	<div class="article side">
 		<div class="ad">
-			<img src="<?php echo get_template_directory_uri()?>/images/article-ad-right.jpg" />
+			<img src="<?php echo get_template_directory_uri()?>/images/ads/side-ad-1.jpg" />
 		</div>
 	</div>
 	<div class="clearfix"></div>
