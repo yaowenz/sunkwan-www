@@ -5,12 +5,7 @@
 		<span>社会招聘</span>		
 	</div>
 	<div class="triangle-bottom"></div>
-	<div class="article">
-		<div class="career">
-			<h2 id="section-recruit-social-scroll"><span></span>简历投递</h2>
-			<p class="contact">有意者请将简历发送至 hr@sunkwan.com.cn，或联系 021-60716181 * 8081， 白经理</p>
-			
-		</div>
+	<div class="article">		
 		<div class="career">
 			<h2><span></span>招聘职位</h2>
 			<table>
@@ -109,6 +104,10 @@
 					</tr>	
 				</tbody>
 			</table>
+		</div>
+		<div class="career">
+			<h2 id="section-recruit-social-scroll"><span></span>简历投递</h2>
+			<p class="contact">有意者请将简历发送至 hr@sunkwan.com.cn，或联系 021-60716181 * 8081， 白经理</p>
 		</div>
 	</div>	
 </div>

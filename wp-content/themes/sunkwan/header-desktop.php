@@ -59,6 +59,6 @@ window.onhashchange=function(){
 				<a href="<?php echo site_url('contact-us')?>">联系我们</a>
 			</div>				
 		</div>
-		<div class="agent-link"><span>&gt;</span>全民经纪人</div>
+		<div class="agent-link"><span>&gt;</span><a style="color:white" href="http://mp.weixin.qq.com/s?__biz=MzIwOTM3MTE0Mg==&mid=100002202&idx=1&sn=a84378548248297c9e97949fdc29f724">全民经纪人</a></div>
 	</div>
 </div>

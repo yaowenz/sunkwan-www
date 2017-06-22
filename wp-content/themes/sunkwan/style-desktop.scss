@@ -89,6 +89,7 @@ p {
 
 /** Contents **/
 .banner.cover {background-repeat:no-repeat;background-size:cover;width:100%;background-position:center;height:150px}
+.banner.real-estate.biz  {background-image:url('images/banner-biz-project.jpg');}
 .banner.real-estate {background-image:url('images/banner-real-estate.jpg');}
 .banner.real-estate {
 	.wrapper {padding-top:30px}
@@ -420,7 +421,7 @@ p {
 /** 电子内刊 **/
 .content.magazine {
 	.doc {
-		& {float:left;margin:0px 15px 30px 15px}
+		& {float:left;margin:30px 65px}
 		&:hover .thumb {box-shadow:0px 0px 15px rgba(0,0,0,0.5);cursor:pointer}	
 		.thumb {background-size:cover;background-position:center;background-repeat:no-repeat;width:270px;height:350px}
 		.download {margin-top:30px;font-size:18px;position:relative}

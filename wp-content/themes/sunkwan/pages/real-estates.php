@@ -25,7 +25,7 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-skys.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">新城上坤樾山</div>
+						<div class="head">新城上坤樾山 / 上海</div>
 						<div class="content">上海63万方山水都会墅区大盘</div>
 					</div>
 				</div>
@@ -33,7 +33,7 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-gytd.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤公园天地</div>
+						<div class="head">上坤公园天地 / 上海</div>
 						<div class="content">顾村公园旁生态社区</div>
 					</div>
 				</div>
@@ -41,7 +41,7 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-xhs.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤旭辉墅</div>
+						<div class="head">上坤旭辉墅 / 上海</div>
 						<div class="content">海派低密高端别墅社区</div>
 					</div>
 				</div>
@@ -57,7 +57,7 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-hsw.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤红树湾</div>
+						<div class="head">上坤红树湾 / 上海</div>
 						<div class="content">绿色科技住宅宜居典范</div>
 					</div>
 				</div>
@@ -80,7 +80,7 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-yc.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤乐城</div>
+						<div class="head">上坤乐城 / 上海</div>
 						<div class="content">北上海之心青年美好社区</div>
 					</div>
 				</div>
@@ -95,23 +95,23 @@ jQuery(function($) {
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-csgc.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤城市广场</div>
+						<div class="head">上坤城市广场 / 上海</div>
 						<div class="content">上大旁开放式购物生活广场</div>
 					</div>
 				</div>
-				<div class="example">
+				<div class="example" data-loc="project-skhj">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-skhj.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤红街</div>
+						<div class="head">上坤红街 / 上海</div>
 						<div class="content">地铁上盖邻里中心</div>
 					</div>
 				</div>
-				<div class="example">
+				<div class="example" data-loc="project-sksj">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-sksj.jpg')"></div>
 					<div class="description">
 						<div class="square"></div>
-						<div class="head">上坤上街</div>
+						<div class="head">上坤上街 / 上海</div>
 						<div class="content">有态度的购物公园</div>
 					</div>
 				</div>

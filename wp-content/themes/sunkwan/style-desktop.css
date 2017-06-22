@@ -159,6 +159,9 @@ p {
   background-position: center;
   height: 150px; }
 
+.banner.real-estate.biz {
+  background-image: url("images/banner-biz-project.jpg"); }
+
 .banner.real-estate {
   background-image: url("images/banner-real-estate.jpg"); }
 
@@ -1069,7 +1072,7 @@ p {
 /** 电子内刊 **/
 .content.magazine .doc {
   float: left;
-  margin: 0px 15px 30px 15px; }
+  margin: 30px 65px; }
 
 .content.magazine .doc:hover .thumb {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
