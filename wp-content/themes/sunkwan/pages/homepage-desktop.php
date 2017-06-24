@@ -256,8 +256,7 @@ function playVideo() {
 					<?php 
 								endif;
 					?>
-					
-						<li><span class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></span><span><?php the_date();?></span></li>
+						<li><span class="title"><a href="<?php the_permalink()?>" title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
 					<?php
 								if ($index % 2 == 0 || $index == $count):
 					?>
@@ -273,7 +272,7 @@ function playVideo() {
 			<div class="tab-events news-list">
 				<div class="bxslider-news">				
 				<?php 
-					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 2] );
+					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6] );
 					$index = 0;
 					$count = 0;
 					if ( $the_query->have_posts() ) :								
@@ -287,7 +286,7 @@ function playVideo() {
 							endif;
 				?>
 				
-					<li><span class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></span><span><?php the_date();?></span></li>
+					<li><span class="title"><a href="<?php the_permalink()?> "title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
 				<?php
 							if ($index % 2 == 0 || $index == $count):
 				?>
