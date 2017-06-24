@@ -140,19 +140,14 @@ jQuery(function($) {
   	  			controls: false,
   	  			infiniteLoop: true,
   	  			autoHover: true,
-  	  			autoStart: false,
-  	  			auto: false,
+  	  			autoStart: true,
+  	  			auto: true,
   	  			speed: 500,
   	  			pause: 3000,		
   	  	  	});
   	  	  	sliderCollection['events'] = eventsSlider;
-  	  	}
-  		
-  		for(var i in sliderCollection) {
-  			sliderCollection[tab].stopAuto();
-  			sliderCollection[tab].goToSlide(0);
-  		}
-  		sliderCollection[tab].startAuto();
+  	  	}	
+  		sliderCollection[tab].reloadSlider();
   	}); 	
   	 	  
 });

@@ -192,7 +192,8 @@ p {
 			a.active {background-color:$red;color:white;font-weight:bold}
 		}
 		.bx-wrapper {background:none;padding:0px;border:none;box-shadow:none}
-		.bx-pager {margin-top:-50px;position:relative}
+		.bx-viewport {height:120px!important}
+		.bx-pager {margin-top:-70px;position:relative}
 		.bx-pager-item a {background:white!important}
 		.bx-pager-item a.active {background:$red!important} 
 		.bxslider-news {height:100px}

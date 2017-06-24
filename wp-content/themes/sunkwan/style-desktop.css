@@ -476,8 +476,11 @@ p {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+#intro-boxes .layer.news .bx-viewport {
+  height: 120px !important; }
+
 #intro-boxes .layer.news .bx-pager {
-  margin-top: -50px;
+  margin-top: -70px;
   position: relative; }
 
 #intro-boxes .layer.news .bx-pager-item a {
