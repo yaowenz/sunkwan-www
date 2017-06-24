@@ -251,6 +251,9 @@ p {
   float: left;
   padding-left: 30px; }
 
+.article.post img {
+  max-width: 100%; }
+
 /** LayerUI **/
 .layui-layer.layui-layer-page {
   background: black;
