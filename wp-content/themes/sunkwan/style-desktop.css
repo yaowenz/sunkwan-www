@@ -421,10 +421,12 @@ p {
   text-align: right; }
 
 #intro-boxes .layer.news .news-list {
+  display: none; }
+
+#intro-boxes .layer.news .news-list ul {
   color: #333;
   padding-left: 20px;
-  margin-top: 10px;
-  display: none; }
+  margin-top: 0px; }
 
 #intro-boxes .layer.news .news-list.active {
   display: block !important; }
@@ -440,7 +442,7 @@ p {
   font-weight: bold;
   font-size: 14px; }
 
-#intro-boxes .layer.news .news-list .title:hover {
+#intro-boxes .layer.news .news-list .title a:hover {
   cursor: pointer;
   color: #D6000F; }
 
@@ -466,6 +468,26 @@ p {
   background-color: #D6000F;
   color: white;
   font-weight: bold; }
+
+#intro-boxes .layer.news .bx-wrapper {
+  background: none;
+  padding: 0px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#intro-boxes .layer.news .bx-pager {
+  margin-top: -50px;
+  position: relative; }
+
+#intro-boxes .layer.news .bx-pager-item a {
+  background: white !important; }
+
+#intro-boxes .layer.news .bx-pager-item a.active {
+  background: #D6000F !important; }
+
+#intro-boxes .layer.news .bxslider-news {
+  height: 100px; }
 
 #intro-boxes .title {
   line-height: 30px;

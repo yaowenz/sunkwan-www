@@ -13,8 +13,6 @@ get_header();
 		?>	
 		<a href="<?php echo get_category_link($term->term_id);?>"><?php echo $term->name; ?></a>
 	</div>
-	
-	
 	<div class="article left">
 		<?php the_post();?>			
 		<h3 class="sub"><?php the_title();?></h3>

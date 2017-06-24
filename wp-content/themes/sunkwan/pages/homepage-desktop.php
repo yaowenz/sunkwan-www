@@ -104,13 +104,56 @@ jQuery(function($) {
   		location.href = '<?php echo site_url('real-estates') ?>';  	
   	});
 
+  	 // 集团新闻滚动
+	var newsSlider = $('.tab-news .bxslider-news').bxSlider({
+		mode: 'horizontal',
+		preload: 'all',
+		controls: false,
+		infiniteLoop: true,
+		autoHover: true,
+		autoStart: true,
+		auto: true,
+		speed: 500,
+		pause: 3000,		
+  	});
+
+	var eventsSlider;
+
+  	var sliderCollection = {
+  		news: newsSlider,
+  		events: eventsSlider
+  	};  	
+
   	// 新闻切换
   	$('.news-category a').click(function() {
+  	  	var tab = $(this).data('tab');  	  	
   		$('.news-category a').removeClass('active');
   		$(this).addClass('active');
-  		$('ul.news-list').removeClass('active');
-  		$('ul.news-list.tab-' + $(this).data('tab')).addClass('active');
-  	});
+  		$('.news-list').removeClass('active');
+  		$('.news-list.tab-' + tab).addClass('active');  
+
+		// Should init here, to calc the size
+  		if (tab == 'events' && eventsSlider == null) {
+  	  		eventsSlider = $('.tab-events .bxslider-news').bxSlider({
+  	  			mode: 'horizontal',
+  	  			preload: 'all',
+  	  			controls: false,
+  	  			infiniteLoop: true,
+  	  			autoHover: true,
+  	  			autoStart: false,
+  	  			auto: false,
+  	  			speed: 500,
+  	  			pause: 3000,		
+  	  	  	});
+  	  	  	sliderCollection['events'] = eventsSlider;
+  	  	}
+  		
+  		for(var i in sliderCollection) {
+  			sliderCollection[tab].stopAuto();
+  			sliderCollection[tab].goToSlide(0);
+  		}
+  		sliderCollection[tab].startAuto();
+  	}); 	
   	 	  
 });
 
@@ -120,7 +163,7 @@ function playVideo() {
 		title: '',
 		resize: false,
 		area: ['856px', '490px'], //宽高
-		content: '<video id="sunkwan_video" preload="auto" controls="controls"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>',
+		content: '<video id="sunkwan_video" width="856" height="480" preload="auto" controls="controls"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>',
 		success: function() {
 			jQuery('#sunkwan_video')[0].play();
 		}
@@ -195,33 +238,68 @@ function playVideo() {
 			<p class="news-category">
 				<a data-tab="news" class="active">集团新闻</a>
 				<a data-tab="events">最新活动</a>
-			<p>
-			<ul class="news-list tab-news active">
-			<?php 
-				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 2] ); 
-				if ( $the_query->have_posts() ) :
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post();
-			?>
-			<li><a href="<?php the_permalink()?>"><span class="title"><?php the_title();?></span></a><span><?php the_date();?></span></li>
-			<?php 					
-					endwhile;					
-				endif;
-			?>				
-			</ul>
-			<ul class="news-list tab-events">
-			<?php 
-				$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 2] ); 
-				if ( $the_query->have_posts() ) :
-					while ( $the_query->have_posts() ) :
-						$the_query->the_post();
-			?>
-			<li><a href="<?php the_permalink()?>"><span class="title"><?php the_title();?></span></a><span><?php the_date();?></span></li>
-			<?php 					
-					endwhile;					
-				endif;
-				wp_reset_postdata();?>	
-			</ul>
+			</p>
+			<!-- 集团新闻 -->
+			<div class="tab-news active news-list">
+				<div class="bxslider-news">
+					<?php 
+						$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
+						$index = 0;
+						if ( $the_query->have_posts() ) :
+							$count = $the_query->post_count;						
+							while ( $the_query->have_posts() ) :
+								$the_query->the_post();
+								$index ++;
+								if ($index % 2 == 1):
+					?>
+					<ul>
+					<?php 
+								endif;
+					?>
+					
+						<li><span class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></span><span><?php the_date();?></span></li>
+					<?php
+								if ($index % 2 == 0 || $index == $count):
+					?>
+					</ul>
+					<?php 
+								endif;
+							endwhile;					
+						endif;
+					?>			
+				</div>
+			</div>
+			<!-- 最新活动-->
+			<div class="tab-events news-list">
+				<div class="bxslider-news">				
+				<?php 
+					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 2] );
+					$index = 0;
+					$count = 0;
+					if ( $the_query->have_posts() ) :								
+						while ( $the_query->have_posts() ) :
+							$the_query->the_post();
+							$index ++;
+							if ($index % 2 == 1):
+				?>
+				<ul>
+				<?php 
+							endif;
+				?>
+				
+					<li><span class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></span><span><?php the_date();?></span></li>
+				<?php
+							if ($index % 2 == 0 || $index == $count):
+				?>
+				</ul>
+				<?php 
+							endif;
+						endwhile;					
+					endif;
+					wp_reset_postdata();
+				?>			
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

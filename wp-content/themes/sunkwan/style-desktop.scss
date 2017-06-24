@@ -176,20 +176,26 @@ p {
 		.card-icon {margin-top:50px;text-align:right}
 	}
 	
-	.layer.news {		
-		.news-list {
-			color:#333;padding-left:20px;margin-top:10px;display:none
+	.layer.news {	
+		.news-list {display:none}	
+		.news-list ul {
+			color:#333;padding-left:20px;margin-top:0px
 		}
 		.news-list.active {display:block!important}
 		.news-list li {color:$red;margin-bottom:5px;list-style-type:square;list-style-position:outside}
 		.news-list .title {color:#333;font-weight:bold;font-size:14px}
-		.news-list .title:hover {cursor:pointer;color:$red}
+		.news-list .title a:hover {cursor:pointer;color:$red}
 		.news-list span {display:block;font-size:12px;color:#666;font-weight:normal}
 		.news-category {
 			& {position:absolute;right:15px;top:20px;font-size:14px}
 			a {display:inline-block;padding:5px 10px;color:#999;cursor:pointer}
 			a.active {background-color:$red;color:white;font-weight:bold}
 		}
+		.bx-wrapper {background:none;padding:0px;border:none;box-shadow:none}
+		.bx-pager {margin-top:-50px;position:relative}
+		.bx-pager-item a {background:white!important}
+		.bx-pager-item a.active {background:$red!important} 
+		.bxslider-news {height:100px}
 	}
 	
 	.title {line-height:30px;text-align:right;font-size:24px}
