@@ -251,7 +251,7 @@ p {
   float: left;
   padding-left: 30px; }
 
-.article.post img {
+.article .post img {
   max-width: 100%; }
 
 /** LayerUI **/
