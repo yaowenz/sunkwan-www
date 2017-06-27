@@ -96,7 +96,7 @@ p {
 	.title {color:#777;font-size:24px;font-weight:bold;line-height:1.5}
 	.title.eng {color:white;font-size:28px}
 }
-.banner.about, .banner.commercial-assets {box-shadow:inset -5px 5px 30px rgba(0,0,0,.2);background-image:url('images/banner-about.jpg');}
+.banner.about, .banner.commercial-assets {background-image:url('images/banner-about.jpg');}
 .banner.contact {background-image:url('images/banner-contact.jpg');}
 .banner.contact .wrapper {text-align:right;padding-right:30px;padding-top:50px}
 .banner.bids {background-image:url('images/banner-bids.jpg')}
@@ -243,23 +243,57 @@ p {
 		.title .eng {font-size:16px;color:#999}
 		.text {float:right;width:75%;border-left:3px solid $red;padding-left:50px;box-sizing:border-box}	
 		.text p {margin-bottom:30px;}
-		.text .subtitle {margin-bottom:10px;font-size:20px;color:$red}
-		.manager {margin-bottom:30px;border-bottom:1px solid #eee;padding-bottom:30px;min-height:180px}
-		.manager .photo {float:left;width:200px}
-		.manager .description {font-size:14px}		
-		.manager .name {color:$red;font-size:20px;margin-bottom:30px}
-		.manager {line-height:1.8}
+		.text .subtitle {margin-bottom:10px;font-size:20px;color:$red}		
 		ul {padding-left:20px}
 		ul li {padding-left:15px;list-style:square outside;line-height:1.5}
-		&.history {
-			.row {margin-bottom:30px;}
-			.row p {margin-bottom:10px}
-			.year {float:left;width:150px}
-			.year span {background-color:$red;color:white;display:inline-block;padding:5px;border-radius:5px;border:1px solid $red;font-size:14px}
-			.events {float:left;border-bottom:1px dotted #ccc}
-		}
+		
 	}
 }
+
+.content.about {
+	.article {padding-top:0px;font-size:18px;padding-right:20px}
+	.sub-cover {padding-top:20px;position:relative}
+	.about-slogon {position:absolute;right:150px;top:80px}
+	.about-title {position:relative;left:50px;top:-70px}
+}
+
+/** 企业文化 **/
+.content.spirit {
+	.article {padding-top:50px;position:relative;height:1500px}
+	.spirit-text {text-align:center;margin-top:20px}
+	.spirit-bg {position:absolute;top:220px;z-index:-1}
+}
+
+/** 发展历程 **/
+.content.history {
+    .article {padding-top:50px;position:relative;height:1600px}
+    .history-text {padding:100px 0px;text-align:center;margin-top:-50px;background-image:url('images/history-bg.jpg');background-repeat:no-repeat;background-size:cover}
+	.section {
+        &.history {
+            .row {margin-bottom:30px;}
+            .row p {margin-bottom:10px}
+            .year {float:left;width:150px}
+            .year span {background-color:$red;color:white;display:inline-block;padding:5px;border-radius:5px;border:1px solid $red;font-size:14px}
+            .events {float:left;border-bottom:1px dotted #ccc}
+        }
+	}   
+}
+
+/** 管理团队 **/
+.content.management {
+    .article {padding-top:50px;}
+	.section.management {margin-top:-50px;background-image:url('images/management-bg.jpg');background-size:cover;background-repeat:no-repeat}
+	.text {color:white;padding-top:50px;padding-right:20px;padding-left:0px;float:left!important;border:none!important}
+	.name span {color:white!important;background-color:$red;display:inline-block;padding:5px 15px}
+	.management-title {text-align:right}
+    .history-text {padding:100px 0px;text-align:center;margin-top:-50px;background-image:url('images/history-bg.jpg');background-repeat:no-repeat;background-size:cover}
+    .manager {margin-bottom:30px;border-bottom:1px solid #eee;padding-bottom:30px;min-height:180px}
+    .manager .photo {float:left;width:200px}
+    .manager .description {font-size:14px}      
+    .manager .name {color:$red;font-size:20px;margin-bottom:30px}
+    .manager {line-height:1.8}
+}
+
 
 /** real estate **/
 .propaganda.real-estate {	
@@ -315,6 +349,12 @@ p {
 		&.hotline {border:none;color:$red}
 	}
 }
+
+/** 用人理念  **/
+.content.philosophy {
+    .article {padding-top:50px}
+} 
+
 
 /** bids, recruit **/
 .content.bids, .content.recruit {

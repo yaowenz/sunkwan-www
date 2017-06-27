@@ -179,8 +179,6 @@ p {
   font-size: 28px; }
 
 .banner.about, .banner.commercial-assets {
-  -webkit-box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.2);
-  box-shadow: inset -5px 5px 30px rgba(0, 0, 0, 0.2);
   background-image: url("images/banner-about.jpg"); }
 
 .banner.contact {
@@ -639,27 +637,6 @@ p {
   font-size: 20px;
   color: #D6000F; }
 
-.content.about .section .manager, .content.commercial-assets .section .manager {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
-  min-height: 180px; }
-
-.content.about .section .manager .photo, .content.commercial-assets .section .manager .photo {
-  float: left;
-  width: 200px; }
-
-.content.about .section .manager .description, .content.commercial-assets .section .manager .description {
-  font-size: 14px; }
-
-.content.about .section .manager .name, .content.commercial-assets .section .manager .name {
-  color: #D6000F;
-  font-size: 20px;
-  margin-bottom: 30px; }
-
-.content.about .section .manager, .content.commercial-assets .section .manager {
-  line-height: 1.8; }
-
 .content.about .section ul, .content.commercial-assets .section ul {
   padding-left: 20px; }
 
@@ -668,17 +645,65 @@ p {
   list-style: square outside;
   line-height: 1.5; }
 
-.content.about .section.history .row, .content.commercial-assets .section.history .row {
+.content.about .article {
+  padding-top: 0px;
+  font-size: 18px;
+  padding-right: 20px; }
+
+.content.about .sub-cover {
+  padding-top: 20px;
+  position: relative; }
+
+.content.about .about-slogon {
+  position: absolute;
+  right: 150px;
+  top: 80px; }
+
+.content.about .about-title {
+  position: relative;
+  left: 50px;
+  top: -70px; }
+
+/** 企业文化 **/
+.content.spirit .article {
+  padding-top: 50px;
+  position: relative;
+  height: 1500px; }
+
+.content.spirit .spirit-text {
+  text-align: center;
+  margin-top: 20px; }
+
+.content.spirit .spirit-bg {
+  position: absolute;
+  top: 220px;
+  z-index: -1; }
+
+/** 发展历程 **/
+.content.history .article {
+  padding-top: 50px;
+  position: relative;
+  height: 1600px; }
+
+.content.history .history-text {
+  padding: 100px 0px;
+  text-align: center;
+  margin-top: -50px;
+  background-image: url("images/history-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.content.history .section.history .row {
   margin-bottom: 30px; }
 
-.content.about .section.history .row p, .content.commercial-assets .section.history .row p {
+.content.history .section.history .row p {
   margin-bottom: 10px; }
 
-.content.about .section.history .year, .content.commercial-assets .section.history .year {
+.content.history .section.history .year {
   float: left;
   width: 150px; }
 
-.content.about .section.history .year span, .content.commercial-assets .section.history .year span {
+.content.history .section.history .year span {
   background-color: #D6000F;
   color: white;
   display: inline-block;
@@ -687,9 +712,65 @@ p {
   border: 1px solid #D6000F;
   font-size: 14px; }
 
-.content.about .section.history .events, .content.commercial-assets .section.history .events {
+.content.history .section.history .events {
   float: left;
   border-bottom: 1px dotted #ccc; }
+
+/** 管理团队 **/
+.content.management .article {
+  padding-top: 50px; }
+
+.content.management .section.management {
+  margin-top: -50px;
+  background-image: url("images/management-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.content.management .text {
+  color: white;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 0px;
+  float: left !important;
+  border: none !important; }
+
+.content.management .name span {
+  color: white !important;
+  background-color: #D6000F;
+  display: inline-block;
+  padding: 5px 15px; }
+
+.content.management .management-title {
+  text-align: right; }
+
+.content.management .history-text {
+  padding: 100px 0px;
+  text-align: center;
+  margin-top: -50px;
+  background-image: url("images/history-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.content.management .manager {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  min-height: 180px; }
+
+.content.management .manager .photo {
+  float: left;
+  width: 200px; }
+
+.content.management .manager .description {
+  font-size: 14px; }
+
+.content.management .manager .name {
+  color: #D6000F;
+  font-size: 20px;
+  margin-bottom: 30px; }
+
+.content.management .manager {
+  line-height: 1.8; }
 
 /** real estate **/
 .propaganda.real-estate {
@@ -830,6 +911,10 @@ p {
 .content.contact .section.hotline {
   border: none;
   color: #D6000F; }
+
+/** 用人理念  **/
+.content.philosophy .article {
+  padding-top: 50px; }
 
 /** bids, recruit **/
 .content.bids .triangle-bottom, .content.recruit .triangle-bottom {

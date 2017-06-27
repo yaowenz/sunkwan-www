@@ -22,9 +22,10 @@ window.onhashchange=function(){
 			<div>
 				<a href="<?php echo site_url('about')?>">关于上坤</a>
 				<ul class="submenu">
-					<li><a href="<?php echo site_url('about')?>/#section-intro">公司概况</a></li>
-					<li><a href="<?php echo site_url('about')?>/#section-spirit">企业文化</a></li>
-					<li><a href="<?php echo site_url('about')?>/#section-history">发展历程</a></li>
+					<li><a href="<?php echo site_url('about')?>">公司概况</a></li>
+					<li><a href="<?php echo site_url('management')?>">管理团队</a></li>
+					<li><a href="<?php echo site_url('spirit')?>">企业文化</a></li>
+					<li><a href="<?php echo site_url('history')?>">发展历程</a></li>
 				</ul>
 			</div>
 			<div>
