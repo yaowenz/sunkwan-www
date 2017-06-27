@@ -196,7 +196,7 @@ function playVideo() {
 				<div class="card-icon">
 					<img src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
 				</div>
-				<div class="replace img"><a href="<?php echo site_url('about')?>/#section-spirit"></a></div>
+				<div class="replace img"><a href="<?php echo site_url('spirit')?>"></a></div>
 			</div>
 		</li>
 		<li class="card-item">
