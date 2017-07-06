@@ -222,7 +222,7 @@ function playVideo() {
 				</select>
 				<div class="replace img"></div>
 				<p class="title">全国布局</p>			
-				<p class="title eng">Arrangements<p>				
+				<p class="title eng">National Layout<p>				
 			</div>
 		</li>
 	</ul>

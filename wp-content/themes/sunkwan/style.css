@@ -11,10 +11,8 @@ Text Domain: sunkwan-2017
 @import url("normalize.css");
 @import url("style-wp.css");
 @import url('style-desktop.css');
-/**
+
 @import url('style-desktop.css') only screen and (min-width:769px );
 /** and ( orientation: portrait ); **/	
 
-/**
 @import url('style-mobile.css') only screen and (max-width:768px);
-**/
