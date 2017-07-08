@@ -7,6 +7,7 @@
 			<a href="<?php echo site_url('bids')?>">招标公告</a>
 			<a href="<?php echo site_url('recruit')?>">加入我们</a>
 			<a href="<?php echo site_url('contact-us')?>">联系我们</a>
+			<a href="http://mp.weixin.qq.com/s?__biz=MzIwOTM3MTE0Mg==&mid=100002202&idx=1&sn=a84378548248297c9e97949fdc29f724">全民经纪人</a>
 		</div>		
 		<div class="logo">
 			<img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" width="100" />

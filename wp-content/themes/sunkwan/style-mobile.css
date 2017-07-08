@@ -8,6 +8,16 @@ body {
   padding-top: 60px;
   -webkit-overflow-scrolling: touch; }
 
+.link-button {
+  margin: auto;
+  padding: 15px 10px;
+  background-color: #D6000F;
+  color: white;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px; }
+
 /**
  * Header
  */
@@ -39,6 +49,25 @@ body {
 /**
  * Index
  */
+#homepage h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
+  text-align: center; }
+
+#homepage h2.red {
+  color: #D6000F; }
+
+#homepage .sep.line {
+  width: 60px;
+  margin: auto;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#index-slides .bg-image {
+  opacity: 1 !important; }
+
 #index-slides .bxslider {
   position: relative;
   padding: 0px;
@@ -57,26 +86,10 @@ body {
   overflow: hidden; }
 
 #index-news {
-  padding: 20px 50px;
+  padding: 20px 35px;
   background-image: url("images/mobile/index-news-bg.jpg");
   background-repeat: repeat-y;
   background-size: 100% auto; }
-
-#index-news .sep.line {
-  width: 60px;
-  margin: auto;
-  border-bottom: 2px solid black;
-  margin-top: 20px;
-  margin-bottom: 10px; }
-
-#index-news h2 {
-  padding: 0px;
-  margin: 0px;
-  font-size: 22px;
-  text-align: center; }
-
-#index-news h2.red {
-  color: #D6000F; }
 
 #index-news ul {
   width: 100%;
@@ -84,18 +97,49 @@ body {
 
 #index-news ul li {
   width: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 #index-news ul li img {
   width: 100%; }
 
 #index-news li .date {
   font-size: 14px;
-  color: #999;
-  margin-bottom: 10px; }
+  color: #999; }
 
 #index-news li .title {
-  font-size: 16px; }
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+#index-culture {
+  position: relative; }
+
+#index-culture .culture-image {
+  z-index: 0; }
+
+#index-culture .culture-text {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  width: 100%; }
+
+#index-culture .culture-text h2 {
+  padding-top: 20px; }
+
+#index-culture .culture-text .text {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5; }
+
+#index-culture .sep.line {
+  margin: 10px auto; }
+
+#index-culture .link-button {
+  margin-top: 30px; }
 
 /** Footer **/
 #footer {

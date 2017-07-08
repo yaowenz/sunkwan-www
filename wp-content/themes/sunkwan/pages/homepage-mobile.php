@@ -32,41 +32,63 @@ function playVideo() {
 }
 
 </script>
-<div id="index-slides">
-	<ul class="bxslider">
-		<li class="slider-1">
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"></div>
-		</li>
-		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
-		</li>
-	</ul>
+<div id="homepage">
+	<div id="index-slides">
+		<ul class="bxslider">
+			<li class="slider-1">
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"></div>
+			</li>
+			<li>
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
+			</li>
+		</ul>
+	</div>
+	<div id="index-news">
+		<h2 class="header red">新闻中心</h2>
+		<div class="sep line"></div>
+		<ul>
+			<?php 
+				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
+			
+				if ( $the_query->have_posts() ) :
+					$count = $the_query->post_count;						
+					while ( $the_query->have_posts() ) :
+						$the_query->the_post();					
+			?>
+			<li data-link="<?php the_permalink()?>">
+				<p class="date"><?php the_date();?></p>
+				<p class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></p>			
+				<p class="thumb"><a href="<?php the_permalink()?>"><img src="<?php echo the_post_thumbnail_url();?>" /></a></p>
+			
+			</li>
+			<?php 	
+					endwhile;					
+				endif;
+			?>
+		</ul>
+		<div class="link-button">查看更多</div>
+	</div>
+	<div id="index-culture">	
+		<div class="culture-image">
+			<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-culture.jpg" width="100%" />
+		</div>
+		<div class="culture-text">
+			<h2 class="header red">品牌文化</h2>
+			<div class="sep line"></div>
+			<div class="text">为宜居而来</div>
+			<div class="text">满足客户对家与美好生活的想象</div>
+			<div class="link-button">查看更多</div>
+		</div>
+	</div>
+	<div id="index-video">	
+		<h2 class="header red">企业视频</h2>
+		<div class="sep line"></div>
+		<div style="width:80%;margin:auto">
+			<video id="sunkwan_video" width="100%" height="auto" preload="auto" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/index-video2.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
+		</div>
+	</div>
 </div>
-<div id="index-news">
-	<h2 class="header red">新闻中心</h2>
-	<div class="sep line"></div>
-	<ul>
-		<?php 
-			$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
-		
-			if ( $the_query->have_posts() ) :
-				$count = $the_query->post_count;						
-				while ( $the_query->have_posts() ) :
-					$the_query->the_post();					
-		?>
-		<li data-link="<?php the_permalink()?>">
-			<p class="title"><?php the_title();?></p>
-			<p class="date"><?php the_date();?></p>
-			<p class="thumb"><img src="<?php echo the_post_thumbnail_url();?>" /></p>
-		
-		</li>
-		<?php 	
-				endwhile;					
-			endif;
-		?>
-	</ul>
-</div>
-<div id="intro-boxes">
+<div>
 	<ul id="cardArea" class="card-area clearfix">
 		<li class="card-item active">
 			<div class="card layer culture">
@@ -104,77 +126,7 @@ function playVideo() {
 				<p class="title eng">National Layout<p>				
 			</div>
 		</li>
-	</ul>
-	<div class="news-box">
-		<div class="layer news">
-			<p class="title">新闻动态</p>
-			<p class="title eng">News</p>
-			<p class="news-category">
-				<a data-tab="news" class="active">集团新闻</a>
-				<a data-tab="events">最新活动</a>
-			</p>
-			<!-- 集团新闻 -->
-			<div class="tab-news active news-list">
-				<div class="bxslider-news">
-					<?php 
-						$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
-						$index = 0;
-						if ( $the_query->have_posts() ) :
-							$count = $the_query->post_count;						
-							while ( $the_query->have_posts() ) :
-								$the_query->the_post();
-								$index ++;
-								if ($index % 2 == 1):
-					?>
-					<ul>
-					<?php 
-								endif;
-					?>
-						<li><span class="title"><a href="<?php the_permalink()?>" title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
-					<?php
-								if ($index % 2 == 0 || $index == $count):
-					?>
-					</ul>
-					<?php 
-								endif;
-							endwhile;					
-						endif;
-					?>			
-				</div>
-			</div>
-			<!-- 最新活动-->
-			<div class="tab-events news-list">
-				<div class="bxslider-news">				
-				<?php 
-					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6] );
-					$index = 0;
-					$count = 0;
-					if ( $the_query->have_posts() ) :								
-						while ( $the_query->have_posts() ) :
-							$the_query->the_post();
-							$index ++;
-							if ($index % 2 == 1):
-				?>
-				<ul>
-				<?php 
-							endif;
-				?>
-				
-					<li><span class="title"><a href="<?php the_permalink()?> "title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
-				<?php
-							if ($index % 2 == 0 || $index == $count):
-				?>
-				</ul>
-				<?php 
-							endif;
-						endwhile;					
-					endif;
-					wp_reset_postdata();
-				?>			
-				</div>
-			</div>
-		</div>
-	</div>
+	</ul>	
 </div>
 
 <?php get_footer();?>

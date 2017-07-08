@@ -8,7 +8,7 @@ html, body {overflow-x:hidden}
 
 body {padding-top:60px; -webkit-overflow-scrolling:touch}
 
-
+.link-button {margin:auto;padding:15px 10px;background-color:$red;color:white;width:100px;text-align:center;font-size:14px;line-height:14px}
 
 /**
  * Header
@@ -25,7 +25,14 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 /**
  * Index
  */
+#homepage {
+    h2 {padding:0px;margin:0px;font-size:22px;text-align:center}
+    h2.red {color:$red}
+    .sep.line {width:60px;margin:auto;border-bottom:1px solid black;margin-top:10px;margin-bottom:10px}
+}
+
 #index-slides {
+	.bg-image {opacity:1!important}
 	.bxslider {position:relative;padding:0px;margin:0px}
     .bx-wrapper {padding:0px;border:none;margin:0px;min-width:100%!important}
     .bxslider li {
@@ -34,19 +41,24 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 }
 
 #index-news {
-	& {padding:20px 50px;background-image:url('images/mobile/index-news-bg.jpg');background-repeat:repeat-y;background-size:100% auto;}
-	.sep.line {width:60px;margin:auto;border-bottom:2px solid black;margin-top:20px;margin-bottom:10px}
-	h2 {padding:0px;margin:0px;font-size:22px;text-align:center}
-	h2.red {color:$red}
+	& {padding:20px 35px;background-image:url('images/mobile/index-news-bg.jpg');background-repeat:repeat-y;background-size:100% auto;}	
 	ul {width:100%;padding:0px}
-	ul li {width:100%;margin-bottom:30px}
+	ul li {width:100%;margin-bottom:30px;background-color:rgba(255,255,255,0.8);padding:10px 15px;box-sizing:border-box}
 	ul li img {width:100%}
 	li {
-	   .date {font-size:14px;color:#999;margin-bottom:10px}
-	   .title {font-size:16px}
+	   .date {font-size:14px;color:#999}
+	   .title {font-size:18px;margin-bottom:10px}
 	}
-	
-	
+}
+
+#index-culture {
+	& {position:relative}
+	.culture-image {z-index:0;}
+	.culture-text {position:absolute;z-index:10;top:0px;width:100%}
+	.culture-text h2 {padding-top:20px;}
+	.culture-text .text {color:white;text-align:center;font-size:16px;line-height:1.5}
+	.sep.line {margin:10px auto}
+	.link-button {margin-top:30px}
 }
 
 /** Footer **/
