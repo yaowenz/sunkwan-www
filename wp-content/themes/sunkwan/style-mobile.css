@@ -5,7 +5,8 @@ html, body {
   overflow-x: hidden; }
 
 body {
-  padding-top: 60px; }
+  padding-top: 60px;
+  -webkit-overflow-scrolling: touch; }
 
 /**
  * Header
