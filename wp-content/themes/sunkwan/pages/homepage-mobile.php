@@ -66,67 +66,35 @@ function playVideo() {
 				endif;
 			?>
 		</ul>
-		<div class="link-button">查看更多</div>
+		<div class="link-button"><a href="<?php echo site_url('category/news')?>">查看更多</a></div>
 	</div>
 	<div id="index-culture">	
 		<div class="culture-image">
-			<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-culture.jpg" width="100%" />
+			<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-culture.jpg" width="100%" style="vertical-align:bottom" />
 		</div>
 		<div class="culture-text">
 			<h2 class="header red">品牌文化</h2>
 			<div class="sep line"></div>
 			<div class="text">为宜居而来</div>
 			<div class="text">满足客户对家与美好生活的想象</div>
-			<div class="link-button">查看更多</div>
+			<div class="link-button"><a href="<?php echo site_url('spirit')?>">查看更多</a></div>
 		</div>
 	</div>
 	<div id="index-video">	
 		<h2 class="header red">企业视频</h2>
 		<div class="sep line"></div>
 		<div style="width:80%;margin:auto">
-			<video id="sunkwan_video" width="100%" height="auto" preload="auto" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/index-video2.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
+			<video id="sunkwan_video" width="100%" height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
+		</div>
+	</div>
+	<div id="index-branches">		
+		<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-branches.jpg" width="100%" style="vertical-align:bottom" />
+		<div class="branches-text">
+			<h2 class="header red">全国布局</h2>			
+			<div class="link-button"><a href="<?php echo site_url('real-estates')?>">查看更多</a></div>
 		</div>
 	</div>
 </div>
-<div>
-	<ul id="cardArea" class="card-area clearfix">
-		<li class="card-item active">
-			<div class="card layer culture">
-				<p class="title">品牌文化<p>
-				<p class="title eng">Brand</p>
-				<div class="card-icon">
-					<img src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
-				</div>
-				<div class="replace img"><a href="<?php echo site_url('spirit')?>"></a></div>
-			</div>
-		</li>
-		<li class="card-item">
-			<div class="card layer video">
-				<div class="replace img"></div>
-				<p class="title">企业视频</p>
-				<p class="title eng">Intro<p>
-				<div class="card-icon">
-					<img style="cursor:pointer" onclick="playVideo()" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
-				</div>
-			</div>
-		</li>
-		<li class="card-item">
-			<div class="card layer projects">
-				<select>
-					<option>前往城市...</option>
-					<option>上海</option>
-					<option>苏州</option>
-					<option>深圳</option>
-					<option>合肥</option>
-					<option>杭州</option>
-					<option>南京</option>
-				</select>
-				<div class="replace img"></div>
-				<p class="title">全国布局</p>			
-				<p class="title eng">National Layout<p>				
-			</div>
-		</li>
-	</ul>	
-</div>
+
 
 <?php get_footer();?>

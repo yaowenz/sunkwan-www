@@ -18,6 +18,9 @@ body {
   font-size: 14px;
   line-height: 14px; }
 
+.link-button a {
+  color: white; }
+
 /**
  * Header
  */
@@ -140,6 +143,26 @@ body {
 
 #index-culture .link-button {
   margin-top: 30px; }
+
+#index-video {
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+#index-video .sep.line {
+  margin-bottom: 15px; }
+
+#index-branches {
+  position: relative; }
+
+#index-branches .branches-text {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  width: 100%; }
+
+#index-branches h2 {
+  padding-top: 20px;
+  padding-bottom: 30px; }
 
 /** Footer **/
 #footer {

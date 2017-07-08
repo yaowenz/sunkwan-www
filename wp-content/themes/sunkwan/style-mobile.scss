@@ -9,6 +9,7 @@ html, body {overflow-x:hidden}
 body {padding-top:60px; -webkit-overflow-scrolling:touch}
 
 .link-button {margin:auto;padding:15px 10px;background-color:$red;color:white;width:100px;text-align:center;font-size:14px;line-height:14px}
+.link-button a {color:white}
 
 /**
  * Header
@@ -59,6 +60,17 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 	.culture-text .text {color:white;text-align:center;font-size:16px;line-height:1.5}
 	.sep.line {margin:10px auto}
 	.link-button {margin-top:30px}
+}
+
+#index-video {
+	& {padding-top:10px;padding-bottom:30px}
+	.sep.line {margin-bottom:15px}
+}
+
+#index-branches {
+    & {position:relative}
+    .branches-text {position:absolute;z-index:10;top:0px;width:100%}
+	h2 {padding-top:20px;padding-bottom:30px}
 }
 
 /** Footer **/
