@@ -74,6 +74,7 @@ jQuery(function($) {
 				targets:  document.querySelector('#menu .menu-list'),
 				left: '0px',
 				easing: 'easeOutExpo',
+				duration: 250,
 			});
 		}
 		return false;
