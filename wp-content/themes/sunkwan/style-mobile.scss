@@ -12,6 +12,42 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 .link-button a {color:white}
 
 /**
+  * Sidemenu
+  */
+#menu {
+  position: fixed;
+  right: 0px;
+  top: 60px;
+  z-index: 2050;
+  width: 100%; 
+}
+
+#menu .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+#menu .menu-list {
+  background-color: white;
+  z-index:100;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -250px;
+  top: 0px;
+}
+
+#menu .menu-list {
+	> div {line-height:2;padding:5px 10px;border-bottom:1px solid #eee}
+	> div .submenu {padding-left:0px;margin:0px;font-size:14px;line-height:2}
+	> div .active {color:$red}
+}
+
+/**
  * Header
  */
 #nav {position:fixed;top:0px;z-index:1000;height:60px;background:white;box-shadow: 1px 1px 10px rgba(0,0,0,0.5)}

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <script>
-jQuery(function($) {
-	
+jQuery(function($) {	
 	$('.bxslider').bxSlider({
 		mode: 'fade',
 		preload: 'all',
@@ -16,21 +15,6 @@ jQuery(function($) {
 	
   	}); 
 });
-
-
-function playVideo() {
-    layer.open({
-		type: 1,
-		title: '',
-		resize: false,
-		area: ['856px', '490px'], //宽高
-		content: '<video id="sunkwan_video" width="856" height="480" preload="auto" controls="controls"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>',
-		success: function() {
-			jQuery('#sunkwan_video')[0].play();
-		}
-  	});  
-}
-
 </script>
 <div id="homepage">
 	<div id="index-slides">
@@ -48,7 +32,7 @@ function playVideo() {
 		<div class="sep line"></div>
 		<ul>
 			<?php 
-				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
+				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 4] );
 			
 				if ( $the_query->have_posts() ) :
 					$count = $the_query->post_count;						

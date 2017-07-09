@@ -140,10 +140,7 @@ function sunkwan_2017_scripts() {
 		wp_enqueue_script( 'jquery.scrollTo', get_template_directory_uri() . '/scripts/jquery.scrollTo.min.js', array('jquery'), '', true );
 	}
 	else {
-// 		wp_enqueue_style( 'animate-css',  get_template_directory_uri() . '/scripts/animate.min.css');
-// 		wp_enqueue_style( 'jquery.fullpage-css',  get_template_directory_uri() . '/scripts/jquery.fullpage.min.css');		
-// 		wp_enqueue_script( 'jquery.fullpage', get_template_directory_uri() . '/scripts/jquery.fullpage.min.js', array(), '', true );
-// 		wp_enqueue_script( 'fastclick', get_template_directory_uri() . '/scripts/fastclick.js', array(), '', true );		
+		wp_enqueue_script( 'slideout', get_template_directory_uri() . '/scripts/slideout.min.js', array(), '', false );		
 	}
 	
 	wp_enqueue_style( 'sunkwan-2017-style', get_stylesheet_uri() );

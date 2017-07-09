@@ -22,6 +22,47 @@ body {
   color: white; }
 
 /**
+  * Sidemenu
+  */
+#menu {
+  position: fixed;
+  right: 0px;
+  top: 60px;
+  z-index: 2050;
+  width: 100%; }
+
+#menu .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#menu .menu-list {
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -250px;
+  top: 0px; }
+
+#menu .menu-list > div {
+  line-height: 2;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee; }
+
+#menu .menu-list > div .submenu {
+  padding-left: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 2; }
+
+#menu .menu-list > div .active {
+  color: #D6000F; }
+
+/**
  * Header
  */
 #nav {
