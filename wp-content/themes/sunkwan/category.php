@@ -13,7 +13,9 @@
 				<ul class="entry-list">				
 				<?php while ( have_posts() ) : the_post();	?>	
 					<li>
-						<div class="thumb" style="background-image:url('<?php echo the_post_thumbnail_url();?>')"></div>
+						<div class="thumb">
+							<a href="<?php echo get_permalink(); ?>"><img src="<?php echo the_post_thumbnail_url();?>" width="100%" /></a>
+						</div>
 						<div class="brief">
 							<p><a href="<?php echo get_permalink(); ?>"><?php the_title();?></a></p>
 							<p class="entry-date"><?php echo get_the_date('Y/m/d');?></p>

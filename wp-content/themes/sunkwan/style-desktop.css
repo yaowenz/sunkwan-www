@@ -1168,12 +1168,11 @@ p {
   font-size: 14px; }
 
 .content.news .entry-list li .thumb {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  float: left;
   width: 250px;
-  height: 150px; }
+  float: left; }
+
+.content.news .entry-list li .thumb a {
+  margin-right: 0px; }
 
 .content.news .entry-list li .brief {
   margin-left: 20px;

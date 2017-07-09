@@ -4,12 +4,20 @@
 
 $red:#D6000F;
 
-html, body {overflow-x:hidden}
-
 body {padding-top:60px; -webkit-overflow-scrolling:touch}
 
 .link-button {margin:auto;padding:15px 10px;background-color:$red;color:white;width:100px;text-align:center;font-size:14px;line-height:14px}
 .link-button a {color:white}
+
+.banner.cover {display:none}
+
+.breadcrumb {
+	line-height:40px;padding-left:15px;height:40px
+}
+
+.wrapper {width:100%;min-width:0px!important}
+.primary.content {width:100%!important}
+.breadcrumb .triangle-right {margin:15px 10px 0px 10px}
 
 /**
   * Sidemenu
@@ -108,6 +116,32 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
     .branches-text {position:absolute;z-index:10;top:0px;width:100%}
 	h2 {padding-top:20px;padding-bottom:30px}
 }
+
+/** Content **/
+.content.news, .content.single {
+	.article.side {
+    	display:none
+    }
+    .article.left {
+	   width:100%!important;padding:15px;box-sizing:border-box
+    }
+    .nav-links {margin-top:0px;border-top:none}
+    .screen-reader-text {display:none}    
+}
+
+.content.news {
+	.section-content {margin-top:0px!important}
+	.entry-list {
+	   & {width:100%;box-sizing:border-box;margin-top:0px}     
+	   .thumb {float:none;margin-bottom:0px;width:100%!important}	
+	   li {width:100%;box-sizing:border-box;margin-bottom:15px;border-bottom:1px dotted #ccc}	   
+	   li .brief {float:none;clear:both;margin:0px}
+	   li a {margin-right:0px;display:inline-block;line-height:1.5}
+	   li p {margin-bottom:0px!important}
+	
+    }
+}
+
 
 /** Footer **/
 #footer {

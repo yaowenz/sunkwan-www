@@ -459,7 +459,8 @@ p {
 		li a:hover {color:$red}
 		li .entry-date {color:#999;font-size:14px}
 		li {
-			.thumb {background-repeat:no-repeat;background-size:cover;background-position:center;float:left;width:250px;height:150px}
+			.thumb {width:250px;float:left}
+			.thumb a {margin-right:0px}
 			.brief {margin-left:20px;float:left}
 			.brief p {margin-bottom:10px}
 		}
