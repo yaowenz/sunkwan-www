@@ -198,7 +198,8 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 	.article {padding:0px;height:auto}
 	.spirit-title img {width:50%}
 	.spirit-text img {width:80%}
-	.spirit-bg {top:190px}
+	.spirit-bg {top:130px}
+	.spirit-bg img {min-height:300px}
 	.core-value {float:none!important;clear:both;width:80%!important;margin:auto}
 }
 
@@ -242,6 +243,8 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 	   & {padding-top:15px}
 	   .title {float:none;clear:both;width:100%}
 	   .text {float:none;clear:both;border-top:1px solid $red;border-left:none;width:100%;padding-left:0px;margin-top:15px}
+	   .text p {margin-bottom:10px}
+	   ul li {font-size:12px;line-height:1.8}
     }
 }
 

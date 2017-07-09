@@ -380,7 +380,10 @@ body {
   width: 80%; }
 
 .content.spirit .spirit-bg {
-  top: 190px; }
+  top: 130px; }
+
+.content.spirit .spirit-bg img {
+  min-height: 300px; }
 
 .content.spirit .core-value {
   float: none !important;
@@ -471,6 +474,13 @@ body {
   width: 100%;
   padding-left: 0px;
   margin-top: 15px; }
+
+.content.philosophy .article .text p {
+  margin-bottom: 10px; }
+
+.content.philosophy .article ul li {
+  font-size: 12px;
+  line-height: 1.8; }
 
 .content.recruit.graduation {
   margin-bottom: 0px; }
