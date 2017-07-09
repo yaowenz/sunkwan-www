@@ -4,7 +4,11 @@
  */
 body {
   padding-top: 60px;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  width: 100%; }
+
+html, body {
+  overflow-x: hidden; }
 
 .link-button {
   margin: auto;

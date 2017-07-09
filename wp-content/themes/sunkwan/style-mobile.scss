@@ -4,7 +4,8 @@
 
 $red:#D6000F;
 
-body {padding-top:60px; -webkit-overflow-scrolling:touch}
+body {padding-top:60px; -webkit-overflow-scrolling:touch;width:100%}
+html, body {overflow-x:hidden}
 
 .link-button {margin:auto;padding:15px 10px;background-color:$red;color:white;width:100px;text-align:center;font-size:14px;line-height:14px}
 .link-button a {color:white}
