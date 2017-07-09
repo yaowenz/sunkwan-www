@@ -118,13 +118,15 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 }
 
 /** Content **/
+.content .article {padding:15px}
 .content.news, .content.single {
 	.article.side {
     	display:none
     }
     .article.left {
-	   width:100%!important;padding:15px;box-sizing:border-box
+	   width:100%!important;box-sizing:border-box;padding:15px!important
     }
+    .article.left .sub {margin-top:5px}
     .nav-links {margin-top:0px;border-top:none}
     .screen-reader-text {display:none}    
 }
@@ -140,6 +142,115 @@ body {padding-top:60px; -webkit-overflow-scrolling:touch}
 	   li p {margin-bottom:0px!important}
 	
     }
+}
+
+.propaganda.real-estate .main {line-height:1.5;margin-top:15px}
+.propaganda.real-estate {padding:30px}
+
+.content.real-estate {
+	.article {padding:25px 0px!important}
+	.section {
+	   & {padding-bottom:20px}
+	   .example {float:none;margin:auto;margin-bottom:20px}
+    }
+   
+}
+
+.content.project {
+	.article {
+	   & {box-sizing:border-box;}
+	   .brief {margin:15px}
+       .w-1000 {width:100%!important}
+	   .w-1000 img {width:100%}
+	}
+	
+}
+
+.content.magazine {	
+	.doc {margin:auto;width:270px;float:none;clear:both;margin-bottom:30px}
+}
+
+.content.commercial-assets {	
+	.section {
+		& {margin-bottom:30px}
+	    .title {float:none;clear:both;width:100%;padding-bottom:15px}
+	    .text {width:100%;float:none;clear:both;border-top:1px solid $red;border-left:none;padding-left:0px;padding-top:15px}
+		.text img {width:100%} 
+	}
+}
+
+.content.about {
+    .sub-cover {padding-top:0px!important}
+	.about-slogon {display:none}
+	.about-title {left:15px;top:-30px}
+	.about-title img {width:50%;}
+	.section.intro {margin-bottom:0px}
+	.section.intro .text {float:none;border:none;width:100%;padding-left:0px}
+}
+
+.content.history {
+	.article {padding:0px;height:auto}
+	.history-title img {width:50%}
+	.history-text img {width:100%}
+}
+
+.content.spirit {
+	.article {padding:0px;height:auto}
+	.spirit-title img {width:50%}
+	.spirit-text img {width:80%}
+	.spirit-bg {top:190px}
+	.core-value {float:none!important;clear:both;width:80%!important;margin:auto}
+}
+
+/* 地产基金 */
+.content.fund {   
+    .advantage {
+       & {float:none;width:100%;margin-bottom:15px}
+	   .point {font-weight:bold}
+      
+    }
+}
+
+.content.management {
+	.section.management {margin-bottom:0px;margin-top:-30px}
+    .article {padding:0px;height:auto}
+	.management-title {text-align:left}
+    .management-title img {width:50%;text-align:left}
+	.intro {font-size:12px}
+	.text {width:100%!important}
+	.photo img {width:100px}
+	.manager .name {margin-bottom:10px}
+}
+
+.content.bids, .content.recruit {
+	& {margin-top:0px}	
+}
+
+.content.bids {
+	& {margin-bottom:0px}
+	.triangle-bottom {margin:15px auto}
+	.article.left {width:100%;float:none;padding:15px;box-sizing:border-box}
+	table {font-size:12px}
+	table .city {width:25%}
+    table th {font-size:14px}
+}
+
+.content.philosophy {
+	.article {
+	   .section {margin-bottom:30px}
+	   .section.management {margin-bottom:0px}
+	   & {padding-top:15px}
+	   .title {float:none;clear:both;width:100%}
+	   .text {float:none;clear:both;border-top:1px solid $red;border-left:none;width:100%;padding-left:0px;margin-top:15px}
+    }
+}
+
+.content.recruit.graduation {
+	& {margin-bottom:0px}	
+    .article > div {padding-bottom:30px;margin-bottom:30px;}
+	table {font-size:12px}
+	table th.category {width:35%!important}
+	table th {font-size:14px}
 }
 
 

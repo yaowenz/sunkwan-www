@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Variables
  */
@@ -221,14 +222,20 @@ body {
   padding-bottom: 30px; }
 
 /** Content **/
+.content .article {
+  padding: 15px; }
+
 .content.news .article.side, .content.single .article.side {
   display: none; }
 
 .content.news .article.left, .content.single .article.left {
   width: 100% !important;
-  padding: 15px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 15px !important; }
+
+.content.news .article.left .sub, .content.single .article.left .sub {
+  margin-top: 5px; }
 
 .content.news .nav-links, .content.single .nav-links {
   margin-top: 0px;
@@ -270,6 +277,216 @@ body {
 
 .content.news .entry-list li p {
   margin-bottom: 0px !important; }
+
+.propaganda.real-estate .main {
+  line-height: 1.5;
+  margin-top: 15px; }
+
+.propaganda.real-estate {
+  padding: 30px; }
+
+.content.real-estate .article {
+  padding: 25px 0px !important; }
+
+.content.real-estate .section {
+  padding-bottom: 20px; }
+
+.content.real-estate .section .example {
+  float: none;
+  margin: auto;
+  margin-bottom: 20px; }
+
+.content.project .article {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content.project .article .brief {
+  margin: 15px; }
+
+.content.project .article .w-1000 {
+  width: 100% !important; }
+
+.content.project .article .w-1000 img {
+  width: 100%; }
+
+.content.magazine .doc {
+  margin: auto;
+  width: 270px;
+  float: none;
+  clear: both;
+  margin-bottom: 30px; }
+
+.content.commercial-assets .section {
+  margin-bottom: 30px; }
+
+.content.commercial-assets .section .title {
+  float: none;
+  clear: both;
+  width: 100%;
+  padding-bottom: 15px; }
+
+.content.commercial-assets .section .text {
+  width: 100%;
+  float: none;
+  clear: both;
+  border-top: 1px solid #D6000F;
+  border-left: none;
+  padding-left: 0px;
+  padding-top: 15px; }
+
+.content.commercial-assets .section .text img {
+  width: 100%; }
+
+.content.about .sub-cover {
+  padding-top: 0px !important; }
+
+.content.about .about-slogon {
+  display: none; }
+
+.content.about .about-title {
+  left: 15px;
+  top: -30px; }
+
+.content.about .about-title img {
+  width: 50%; }
+
+.content.about .section.intro {
+  margin-bottom: 0px; }
+
+.content.about .section.intro .text {
+  float: none;
+  border: none;
+  width: 100%;
+  padding-left: 0px; }
+
+.content.history .article {
+  padding: 0px;
+  height: auto; }
+
+.content.history .history-title img {
+  width: 50%; }
+
+.content.history .history-text img {
+  width: 100%; }
+
+.content.spirit .article {
+  padding: 0px;
+  height: auto; }
+
+.content.spirit .spirit-title img {
+  width: 50%; }
+
+.content.spirit .spirit-text img {
+  width: 80%; }
+
+.content.spirit .spirit-bg {
+  top: 190px; }
+
+.content.spirit .core-value {
+  float: none !important;
+  clear: both;
+  width: 80% !important;
+  margin: auto; }
+
+/* 地产基金 */
+.content.fund .advantage {
+  float: none;
+  width: 100%;
+  margin-bottom: 15px; }
+
+.content.fund .advantage .point {
+  font-weight: bold; }
+
+.content.management .section.management {
+  margin-bottom: 0px;
+  margin-top: -30px; }
+
+.content.management .article {
+  padding: 0px;
+  height: auto; }
+
+.content.management .management-title {
+  text-align: left; }
+
+.content.management .management-title img {
+  width: 50%;
+  text-align: left; }
+
+.content.management .intro {
+  font-size: 12px; }
+
+.content.management .text {
+  width: 100% !important; }
+
+.content.management .photo img {
+  width: 100px; }
+
+.content.management .manager .name {
+  margin-bottom: 10px; }
+
+.content.bids, .content.recruit {
+  margin-top: 0px; }
+
+.content.bids {
+  margin-bottom: 0px; }
+
+.content.bids .triangle-bottom {
+  margin: 15px auto; }
+
+.content.bids .article.left {
+  width: 100%;
+  float: none;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content.bids table {
+  font-size: 12px; }
+
+.content.bids table .city {
+  width: 25%; }
+
+.content.bids table th {
+  font-size: 14px; }
+
+.content.philosophy .article .section {
+  margin-bottom: 30px; }
+
+.content.philosophy .article .section.management {
+  margin-bottom: 0px; }
+
+.content.philosophy .article {
+  padding-top: 15px; }
+
+.content.philosophy .article .title {
+  float: none;
+  clear: both;
+  width: 100%; }
+
+.content.philosophy .article .text {
+  float: none;
+  clear: both;
+  border-top: 1px solid #D6000F;
+  border-left: none;
+  width: 100%;
+  padding-left: 0px;
+  margin-top: 15px; }
+
+.content.recruit.graduation {
+  margin-bottom: 0px; }
+
+.content.recruit.graduation .article > div {
+  padding-bottom: 30px;
+  margin-bottom: 30px; }
+
+.content.recruit.graduation table {
+  font-size: 12px; }
+
+.content.recruit.graduation table th.category {
+  width: 35% !important; }
+
+.content.recruit.graduation table th {
+  font-size: 14px; }
 
 /** Footer **/
 #footer {

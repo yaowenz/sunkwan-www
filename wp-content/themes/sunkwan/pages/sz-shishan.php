@@ -7,7 +7,7 @@
 <div class="primary content project" style="background:black">
 	<div class="article">
 		<div>			
-			<img src="<?php echo get_template_directory_uri()?>/images/projects/sz-shishan.jpg" />
+			<img src="<?php echo get_template_directory_uri()?>/images/projects/sz-shishan.jpg" width="100%" />
 		</div>
 	</div>
 </div>

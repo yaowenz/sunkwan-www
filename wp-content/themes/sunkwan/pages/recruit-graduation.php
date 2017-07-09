@@ -35,8 +35,8 @@
 			<table>
 				<thead>	
 					<tr>
-						<th width="200">岗位类别</th>					
-						<th>岗位名称</th>									
+						<th width="200" class="category">岗位类别</th>					
+						<th class="name">岗位名称</th>									
 					</tr>					
 				</thead>
 				<tbody>

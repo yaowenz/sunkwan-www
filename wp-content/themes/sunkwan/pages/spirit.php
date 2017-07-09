@@ -10,10 +10,10 @@
 		<div class="spirit-bg">
 			<img src="<?php echo get_template_directory_uri()?>/images/spirit-text-bg.jpg" width="100%" />
 		</div>	
-		<div style="float:left;width:50%">
+		<div style="float:left;width:50%" class="core-value">
 			<img src="<?php echo get_template_directory_uri()?>/images/spirit-core-1.png" width="100%" />
 		</div>
-		<div style="float:left;width:50%">
+		<div style="float:left;width:50%" class="core-value">
 			<img src="<?php echo get_template_directory_uri()?>/images/spirit-core-2.png" width="100%" />
 		</div>
 		<div class="clearfix"></div>

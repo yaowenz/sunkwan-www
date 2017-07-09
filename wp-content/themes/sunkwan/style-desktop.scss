@@ -409,9 +409,10 @@ p {
 .content.fund {
 	.title {font-size:24px;text-align:center}
 	.propaganda {padding:10px;display:inline-block;margin:30px 0px 20px 0px;background:$red;color:white;font-size:16px}
-	table {text-align:center;margin-top:30px;margin-bottom:100px}
-	table td {padding:15px;line-height:2}
-	table th {font-size:20px} 
+	.advantage {
+	   & {float:left;width:33%;text-align:center;margin-top:30px;margin-bottom:100px}
+	   .point {font-size:20px}
+	}
 }
 
 /* 用人理念 */
@@ -488,7 +489,7 @@ p {
 		.brief {font-size:20px;margin-bottom:50px;font-weight:bold;text-align:center}
 		p {text-align:left;margin-top:50px;font-size:16px;line-height:1.8}
 		p.aligncenter {text-align:center}
-		p.w-1000 {width:1000px;margin-left:auto;margin-right:auto}
+		p.w-1000 {width:1010px;margin-left:auto;margin-right:auto}
 	}
 }
 

@@ -9,7 +9,7 @@
 		<div class="title"><img src="<?php echo get_template_directory_uri()?>/images/projects/sh-yueshan-title.jpg" /></div>
 		<div class="triangle-bottom"></div>
 		<div>			
-			<img src="<?php echo get_template_directory_uri()?>/images/projects/sh-yueshan.jpg" />
+			<img src="<?php echo get_template_directory_uri()?>/images/projects/sh-yueshan.jpg" width="100%" />
 		</div>
 	</div>
 </div>

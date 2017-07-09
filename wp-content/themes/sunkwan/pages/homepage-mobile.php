@@ -20,7 +20,7 @@ jQuery(function($) {
 	<div id="index-slides">
 		<ul class="bxslider">
 			<li class="slider-1">
-				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"></div>
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"><a href="<?php echo site_url('spirit')?>"></a></div>
 			</li>
 			<li>
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>

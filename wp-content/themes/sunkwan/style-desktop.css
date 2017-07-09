@@ -1052,16 +1052,14 @@ p {
   color: white;
   font-size: 16px; }
 
-.content.fund table {
+.content.fund .advantage {
+  float: left;
+  width: 33%;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 100px; }
 
-.content.fund table td {
-  padding: 15px;
-  line-height: 2; }
-
-.content.fund table th {
+.content.fund .advantage .point {
   font-size: 20px; }
 
 /* 用人理念 */
@@ -1239,7 +1237,7 @@ p {
   text-align: center; }
 
 .content.project .article p.w-1000 {
-  width: 1000px;
+  width: 1010px;
   margin-left: auto;
   margin-right: auto; }
 

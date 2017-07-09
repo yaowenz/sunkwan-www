@@ -8,8 +8,8 @@
 		<table>
 			<thead>
 				<tr>
-					<th>所在城市</th>
-					<th>项目名称</th>
+					<th class="city">所在城市</th>
+					<th class="project-name">项目名称</th>
 				</tr>					
 			</thead>
 			<tbody>

@@ -6,8 +6,8 @@
 		<a><?php the_title();?></a>
 	</div>
 	<div class="article" style="padding-top:0px">		
-		<p class="aligncenter" style="margin-top:0px">
-			<img src="<?php echo get_template_directory_uri()?>/images/projects/project-sksj-full.jpg" />
+		<p class="aligncenter" style="margin-top:30px">
+			<img src="<?php echo get_template_directory_uri()?>/images/projects/project-sksj-full.jpg" width="100%" />
 		</p>
 		<p>&nbsp;</p>
 	</div>

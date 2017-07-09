@@ -20,15 +20,7 @@ jQuery(function($) {
 	<div class="article">
 		<div class="section villa">
 			<div class="title"><span></span>高端别墅系</div>
-			<div class="row">
-				<div class="example" data-loc="sh-yueshan">
-					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-skys.jpg')"></div>
-					<div class="description">
-						<div class="square"></div>
-						<div class="head">新城上坤樾山 / 上海</div>
-						<div class="content">上海63万方山水都会墅区大盘</div>
-					</div>
-				</div>
+			<div class="row">				
 				<div class="example" data-loc="project-gytd">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-gytd.jpg')"></div>
 					<div class="description">
@@ -53,6 +45,14 @@ jQuery(function($) {
 		<div class="section green">
 			<div class="title"><span></span>绿色建筑系</div>
 			<div class="row">				
+				<div class="example" data-loc="sh-yueshan">
+					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-skys.jpg')"></div>
+					<div class="description">
+						<div class="square"></div>
+						<div class="head">新城上坤樾山 / 上海</div>
+						<div class="content">上海63万方山水都会墅区大盘</div>
+					</div>
+				</div>
 				<div class="example" data-loc="project-hsw">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-hsw.jpg')"></div>
 					<div class="description">
@@ -67,21 +67,6 @@ jQuery(function($) {
 						<div class="square"></div>
 						<div class="head">上坤狮山四季 / 苏州</div>
 						<div class="content">美世低密精装智慧社区</div>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>			
-		</div>
-		<div class="triangle-bottom"></div>
-		<div class="section young">
-			<div class="title"><span></span>青年住宅系</div>
-			<div class="row">
-				<div class="example" data-loc="project-yuecheng">
-					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-yc.jpg')"></div>
-					<div class="description">
-						<div class="square"></div>
-						<div class="head">上坤乐城 / 上海</div>
-						<div class="content">北上海之心青年美好社区</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
@@ -113,6 +98,21 @@ jQuery(function($) {
 						<div class="square"></div>
 						<div class="head">上坤上街 / 上海</div>
 						<div class="content">有态度的购物公园</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>			
+		</div>
+		<div class="triangle-bottom"></div>
+		<div class="section young">
+			<div class="title"><span></span>青年住宅系</div>
+			<div class="row">
+				<div class="example" data-loc="project-yuecheng">
+					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-yc.jpg')"></div>
+					<div class="description">
+						<div class="square"></div>
+						<div class="head">上坤乐城 / 上海</div>
+						<div class="content">北上海之心青年美好社区</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
