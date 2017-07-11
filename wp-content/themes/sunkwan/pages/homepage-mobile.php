@@ -36,7 +36,7 @@ jQuery(function($) {
 			<div class="sep line"></div>
 			<div class="text">上坤股份成立于2009年，系深圳盈信集团投资有限公司成员企业，以房地产开发、地产金融、商业资产管理为公司主营业务。</div>
 			<div class="text">上坤精耕上海，城市发展布局长三角核心经济城市和深广经济圈，旨在打造更宜居的产品，拒绝产品复制、关注客户体验，不断从使用者的角度出发，做出“被需要”的产品，用设计、科技、人文赋予产品全新的生命力。</div>
-			<div class="link-button"><a href="http://server-dev/sunkwan/www/about">查看更多</a></div>
+			<div class="link-button"><a href="<?php echo site_url('about')?>">查看更多</a></div>
 		</div>
 	</div>
 	<div id="index-culture">	
