@@ -97,19 +97,25 @@ html, body {overflow-x:hidden}
 	}
 }
 
-#index-culture {
-	& {position:relative}
-	 .culture-image {z-index:0;display:none}
-	/* .culture-text {position:absolute;z-index:10;top:0px;width:100%}*/
-	.culture-text {background-color:$red;padding-bottom:30px}
-	.culture-text h2 {padding-top:20px;}
+#index-about {	
+	.about-text {background-color:$red;padding-bottom:30px}
+	.about-text h2 {padding-top:20px;}
 	h2 {color:white}
-	.culture-text .text {color:white;text-align:center;font-size:16px;line-height:1.5}
-	.sep.line {margin:10px auto}
+	.about-text .text {color:white;line-height:1.5;padding:0px 20px;text-align:left;margin-bottom:10px}
+	.sep.line {margin:20px auto}
 	.link-button {margin-top:30px;background-color:rgba(255,255,255,0.8)}
-	.link-button a {color:$red}
-	.text {padding:0px 20px;text-align:left!important;margin-bottom:10px}	
+	.link-button a {color:$red}	
 }
+
+#index-culture {
+    & {position:relative}
+    .culture-image {z-index:0;}
+    .culture-text {position:absolute;z-index:10;top:0px;width:100%}
+    .culture-text h2 {padding-top:20px;}  
+    .culture-text .text {color:white;text-align:center;font-size:16px;line-height:1.5}
+    .sep.line {margin:10px auto}    
+}
+
 
 #index-video {
 	& {padding-top:10px;padding-bottom:30px}
