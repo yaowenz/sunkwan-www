@@ -175,15 +175,15 @@ function playVideo() {
 			<img class="title-er" src="<?php echo get_template_directory_uri()?>/images/title-er.png" />
 			<img class="title-lai" src="<?php echo get_template_directory_uri()?>/images/title-lai.png" />			
 			<img class="title-coming" src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
-		</li>
-		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
-		</li>	
+		</li>		
 		<li>
 			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"><a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a></div>
 		</li>	
 		<li>
 			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');"><a href="<?php echo site_url('real-estate/sh-yueshan')?>" target="_blank"></a></div>
+		</li>
+		<li>
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
 		</li>
 	</ul>
 </div>

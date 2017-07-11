@@ -51,7 +51,7 @@ window.onhashchange=function(){
 				<a href="http://sunkwan.zhiye.com/search">加入我们</a>
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('philosophy')?>">用人理念</a></li>
-					<li><a href="<?php echo site_url('employees')?>">员工活动</a></li>
+					<!-- <li><a href="<?php echo site_url('employees')?>">员工活动</a></li> -->
 					<li><a href="http://sunkwan.zhiye.com/search">社会招聘</a></li>
 					<li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li>					
 				</ul>
