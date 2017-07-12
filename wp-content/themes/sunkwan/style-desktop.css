@@ -656,8 +656,8 @@ p {
 
 .content.about .about-slogon {
   position: absolute;
-  right: 150px;
-  top: 80px; }
+  right: 130px;
+  top: 100px; }
 
 .content.about .about-title {
   position: relative;
@@ -683,7 +683,7 @@ p {
 .content.history .article {
   padding-top: 50px;
   position: relative;
-  height: 1600px; }
+  height: 1750px; }
 
 .content.history .history-text {
   padding: 100px 0px;
@@ -722,17 +722,16 @@ p {
 
 .content.management .section.management {
   margin-top: -50px;
-  background-image: url("images/management-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .content.management .text {
   color: white;
-  padding-top: 50px;
-  padding-right: 20px;
-  padding-left: 0px;
-  float: left !important;
-  border: none !important; }
+  border: none !important;
+  float: none !important;
+  clear: both;
+  width: 100% !important;
+  padding-left: 0px !important; }
 
 .content.management .name span {
   color: white !important;
@@ -752,17 +751,18 @@ p {
   background-size: cover; }
 
 .content.management .manager {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 30px;
-  min-height: 180px; }
+  margin-bottom: 50px;
+  padding: 35px;
+  min-height: 180px;
+  background-color: #eee; }
 
 .content.management .manager .photo {
   float: left;
   width: 200px; }
 
 .content.management .manager .description {
-  font-size: 14px; }
+  font-size: 14px;
+  color: black; }
 
 .content.management .manager .name {
   color: #D6000F;
