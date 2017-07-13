@@ -20,7 +20,7 @@
 						<img src="<?php echo get_template_directory_uri()?>/images/manager-zj.jpg" />
 					</div>
 					<div class="description">
-						<div class="name"><span>创始人、CEO&nbsp;&nbsp;朱  静</span></div>
+						<div class="name"><span>创始人 · CEO&nbsp;&nbsp;朱  静</span></div>
 						<div class="intro">总经理朱静毕业于中欧国际工商学院，工商管理硕士。从业房地产16年，曾经历河南建业等大型房企，后与林劲峰先生合作创办上坤置业。70后的她出身于军人家庭，理想主义者以及对艺术作品的欣赏品味，这使上坤产品的气质是大气温暖、人文与艺术兼顾。</div>
 					</div> 
 				</div>
