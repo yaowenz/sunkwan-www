@@ -148,17 +148,32 @@ jQuery(function($) {
   	  	  	sliderCollection['events'] = eventsSlider;
   	  	}	
   		sliderCollection[tab].reloadSlider();
-  	}); 	
+  	}); 
+
+
+  	// 视频切换
+ 	var videoSlider = $('#video-clips').bxSlider({
+		mode: 'horizontal',
+		preload: 'all',
+		controls: true,
+		infiniteLoop: true,
+		autoHover: false,
+		autoStart: false,
+		auto: false,
+		speed: 500,
+		pause: 3000,	
+		pager: false	
+  	});	
   	 	  
 });
 
-function playVideo() {
+function playVideo(src) {
     layer.open({
 		type: 1,
 		title: '',
 		resize: false,
 		area: ['856px', '490px'], //宽高
-		content: '<video id="sunkwan_video" width="856" height="480" preload="auto" controls="controls"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>',
+		content: '<video id="sunkwan_video" width="856" height="480" preload="auto" controls="controls"><source src="' + src + '" type="video/mp4"></video>',
 		success: function() {
 			jQuery('#sunkwan_video')[0].play();
 		}
@@ -200,13 +215,24 @@ function playVideo() {
 			</div>
 		</li>
 		<li class="card-item">
-			<div class="card layer video">
-				<div class="replace img"></div>
+			<div class="card layer video">				
 				<p class="title">企业视频</p>
 				<p class="title eng">Intro<p>
 				<div class="card-icon">
 					<img style="cursor:pointer" onclick="playVideo()" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 				</div>
+			</div>
+			<div class="video-clip-wrapper">
+				<ul id="video-clips">
+					<li>						
+						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-1.jpg" />
+						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video.mp4')?>');" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-2.jpg" />
+						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video-wanhui.mp4')?>');"  src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					</li>
+				</ul>
 			</div>
 		</li>
 		<li class="card-item">

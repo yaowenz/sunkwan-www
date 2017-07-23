@@ -234,10 +234,22 @@ html, body {
 
 #index-video {
   padding-top: 10px;
-  padding-bottom: 30px; }
+  padding-bottom: 60px; }
 
 #index-video .sep.line {
   margin-bottom: 15px; }
+
+#index-video .bx-wrapper {
+  padding: 0px;
+  border: none;
+  margin: 0px;
+  min-width: 100% !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+#index-video #video-clips video {
+  width: 70% !important;
+  margin: auto 12.5%; }
 
 #index-branches {
   position: relative; }

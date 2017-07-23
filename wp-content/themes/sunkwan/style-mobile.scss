@@ -119,8 +119,13 @@ html, body {overflow-x:hidden}
 
 
 #index-video {
-	& {padding-top:10px;padding-bottom:30px}
+	& {padding-top:10px;padding-bottom:60px}
 	.sep.line {margin-bottom:15px}
+    .bx-wrapper {padding:0px;border:none;margin:0px;min-width:100%!important;box-shadow:none!important}
+	#video-clips {
+		video {width:70%!important;margin:auto 12.5%}
+	  
+	}
 }
 
 #index-branches {

@@ -14,6 +14,19 @@ jQuery(function($) {
 		touchEnabled: true	
 	
   	}); 
+
+
+	$('#video-clips').bxSlider({
+		mode: 'fade',
+		preload: 'all',
+		controls: true,
+		infiniteLoop: true,
+		autoHover: false,
+		autoStart: false,
+		auto: false,
+		speed: 500,
+		touchEnabled: true		
+  	});
 });
 </script>
 <div id="homepage">
@@ -88,10 +101,15 @@ jQuery(function($) {
 	</div>	
 	<div id="index-video">	
 		<h2 class="header red">企业视频</h2>
-		<div class="sep line"></div>
-		<div style="width:80%;margin:auto">
-			<video id="sunkwan_video" width="100%" height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
-		</div>
+		<div class="sep line"></div>		
+		<div id="video-clips">	
+			<div>		
+				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
+			</div>
+			<div>
+				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video-clip-2.jpg"><source src="<?php echo site_url('sunkwan-video-wanhui.mp4')?>" type="video/mp4"></video>
+			</div>
+		</div>		
 	</div>
 </div>
 <?php get_footer();?>

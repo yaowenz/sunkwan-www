@@ -145,20 +145,35 @@ p {
 	.card-area .card-item+.card-item{margin-left:5px}
 	.card-area .card-item.active{z-index:6;box-shadow:-5px 5px 30px rgba(0,0,0,.2);width:430px}
 	.news-box {position:absolute;top:0px;right:0px;height:200px;background:#EDEDED;width:395px;z-index:10}
+
+	.card-item {
+        .bx-wrapper {box-shadow:none;border:none}
+	    .video-clip-wrapper {height:200px;width:430px;position:absolute;top:0px;z-index:-1;opacity:0}		     
+		&.active {
+	        .video-clip-wrapper {z-index:10;opacity:1}
+		}
+		
+		#video-clips {	
+		    img {width:100%;height:200px}
+	        img.btn-play {position:absolute;width:62px;height:62px;top:70px;margin-left:184px;opacity:0.6}
+	        img.btn-play:hover {opacity:0.9;cursor:pointer}
+        }
+    }
 	
 	.layer {
 		.replace.img {background-size:cover;background-repeat:no-repeat;background-position:center;opacity:0;position:absolute;height:100%;width:100%;top:0px;left:100%;transition:all .5s cubic-bezier(.4,0,.2,1),z-index 0s .12s;z-index:-100}
-		.replace.img a {display:block;width:100%;height:100%}
+        .replace.img a {display:block;width:100%;height:100%}
 		& {height:100%;padding:15px;box-sizing:border-box;position:relative}
 		&.culture {background:$red;color:white;z-index:1}
 		&.culture .replace.img {background-image:url('images/index-culture.jpg')}
 		&.culture.active .replace.img {left:0px;z-index:3;display:block;opacity:1}
 		&.video {background:#00A5A5;color:#fafafa;z-index:3;transition:all .5s cubic-bezier(.4,0,.2,1)}
-		&.video .replace.img {background-image:url('images/index-video2.jpg')}
-		&.video.active {background-color:white;background-repeat:no-repeat;background-position:right center;background-size:auto 100%}
+		&.video .video-clip img {width:100%}		
+		&.video.active {padding:0px;background-color:white;background-repeat:no-repeat;background-position:right center;background-size:auto 100%}
+		&.video.active .bx-wrapper {display:block}		
 		&.video .title, &.video .card-icon {transition:all .5s cubic-bezier(.4,0,.2,1)}
 		&.video.active .title {opacity:0}
-		&.video.active .card-icon {opacity:0.6}		
+		&.video.active .card-icon {display:none}		
 		&.video.active .replace.img {left:0px;opacity:1}		
 		&.projects {background:#3C2D2E;z-index:4;color:white}
 		&.projects .eng {color:#D2BEA0;}
