@@ -247,9 +247,26 @@ html, body {
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
 
+#index-video .bx-pager-item a {
+  height: 15px;
+  width: 15px;
+  border-radius: 15px; }
+
+#index-video .bx-controls.bx-has-pager {
+  padding-top: 0px; }
+
+#index-video .bx-pager.bx-default-pager a {
+  background: #aaa; }
+
+#index-video .bx-pager.bx-default-pager a.active {
+  background: #D6000F; }
+
+#index-video .bx-viewport {
+  margin-bottom: 20px; }
+
 #index-video #video-clips video {
-  width: 70% !important;
-  margin: auto 12.5%; }
+  width: 80% !important;
+  margin: auto 10%; }
 
 #index-branches {
   position: relative; }

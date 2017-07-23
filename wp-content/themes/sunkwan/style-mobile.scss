@@ -122,8 +122,13 @@ html, body {overflow-x:hidden}
 	& {padding-top:10px;padding-bottom:60px}
 	.sep.line {margin-bottom:15px}
     .bx-wrapper {padding:0px;border:none;margin:0px;min-width:100%!important;box-shadow:none!important}
+	.bx-pager-item a {height:15px;width:15px;border-radius:15px}
+	.bx-controls.bx-has-pager {padding-top:0px}
+	.bx-pager.bx-default-pager a {background:#aaa}
+	.bx-pager.bx-default-pager a.active {background:$red}
+	.bx-viewport {margin-bottom:20px}
 	#video-clips {
-		video {width:70%!important;margin:auto 12.5%}
+		video {width:80%!important;margin:auto 10%}
 	  
 	}
 }

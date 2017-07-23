@@ -19,7 +19,7 @@ jQuery(function($) {
 	$('#video-clips').bxSlider({
 		mode: 'fade',
 		preload: 'all',
-		controls: true,
+		controls: false,		
 		infiniteLoop: true,
 		autoHover: false,
 		autoStart: false,
