@@ -232,6 +232,10 @@ function playVideo(src) {
 						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-2.jpg" />
 						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video-wanhui.mp4')?>');"  src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 					</li>
+					<li>
+						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-team.jpg" />
+						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video-team.mp4')?>');"  src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					</li>
 				</ul>
 			</div>
 		</li>

@@ -109,6 +109,9 @@ jQuery(function($) {
 			<div>
 				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video-clip-2.jpg"><source src="<?php echo site_url('sunkwan-video-wanhui.mp4')?>" type="video/mp4"></video>
 			</div>
+			<div>
+				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video-clip-team.jpg"><source src="<?php echo site_url('sunkwan-video-team.mp4')?>" type="video/mp4"></video>
+			</div>
 		</div>		
 	</div>
 </div>
