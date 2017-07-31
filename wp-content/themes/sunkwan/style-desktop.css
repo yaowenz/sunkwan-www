@@ -308,6 +308,9 @@ p {
   z-index: -1;
   opacity: 0; }
 
+#intro-boxes .card-item .video-clip-wrapper .bx-wrapper .bx-prev, #intro-boxes .card-item .video-clip-wrapper .bx-wrapper .bx-next {
+  background-image: url("images/controls-red.png") !important; }
+
 #intro-boxes .card-item.active .video-clip-wrapper {
   z-index: 10;
   opacity: 1; }
