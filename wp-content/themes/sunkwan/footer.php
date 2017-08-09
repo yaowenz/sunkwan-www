@@ -13,6 +13,10 @@
 			<img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" width="100" />
 			<p><a class="beian" href="http://www.miitbeian.gov.cn">沪ICP备10027157号</a>&nbsp;&nbsp;上海上坤实业投资有限公司
 		</div>
+		<div class="qrcode zhaopin" style="right:250px">
+			<img style="margin-bottom:5px" src="<?php echo get_template_directory_uri()?>/images/wx-zhaopin.jpg" valign="middle" height="100" />
+			<p class="title" style="font-size:16px;color:#333">上坤招聘微信端</p>
+		</div>
 		<div class="qrcode hotline">
 			<img style="margin-bottom:5px" src="<?php echo get_template_directory_uri()?>/images/wx-qrcode.png" valign="middle" height="100" />
 			<p class="title">客户服务热线：</p>
