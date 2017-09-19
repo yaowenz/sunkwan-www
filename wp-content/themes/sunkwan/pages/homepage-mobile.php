@@ -39,7 +39,7 @@ jQuery(function($) {
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-sssj.jpg');"><a href="<?php echo site_url('real-estate/sz-shishan')?>"></a></div>
 			</li>
 			<li>
-				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.skgeek.com"></a></div>
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.sungeek.com.cn/"></a></div>
 			</li>
 		</ul>
 	</div>	

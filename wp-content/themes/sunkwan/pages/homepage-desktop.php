@@ -198,7 +198,7 @@ function playVideo(src) {
 			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');"><a href="<?php echo site_url('real-estate/sh-yueshan')?>" target="_blank"></a></div>
 		</li>
 		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.skgeek.com" target="_blank"></a></div>
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.www.sungeek.com.cn/" target="_blank"></a></div>
 		</li>
 	</ul>
 </div>
