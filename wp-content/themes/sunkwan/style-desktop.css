@@ -1214,6 +1214,7 @@ p {
 
 .content.news .entry-list li .brief {
   margin-left: 20px;
+  width: 520px;
   float: left; }
 
 .content.news .entry-list li .brief p {
