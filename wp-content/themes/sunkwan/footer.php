@@ -11,7 +11,7 @@
 		</div>		
 		<div class="logo">
 			<img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" width="100" />
-			<p><a class="beian" href="http://www.miitbeian.gov.cn">沪ICP备10027157号</a>&nbsp;&nbsp;上海上坤实业投资有限公司
+			<p><a class="beian" href="http://www.miitbeian.gov.cn">沪ICP备17025697号</a>&nbsp;&nbsp;上海上坤置业有限公司
 		</div>
 		<div class="qrcode zhaopin" style="right:250px">
 			<img style="margin-bottom:5px" src="<?php echo get_template_directory_uri()?>/images/wx-zhaopin.jpg" valign="middle" height="100" />
