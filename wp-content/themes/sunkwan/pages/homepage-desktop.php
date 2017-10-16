@@ -183,6 +183,9 @@ function playVideo(src) {
 </script>
 <div id="index-slides">
 	<ul class="bxslider">
+		<li class="slider-0">
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-0.jpg');"></div>
+		</li>
 		<li class="slider-1">
 			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-1.jpg');"></div>
 			<img class="title-wei" src="<?php echo get_template_directory_uri()?>/images/title-wei.png" />
