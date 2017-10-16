@@ -83,7 +83,7 @@ jQuery(function($) {
 		speed: 1000,
 		pause: 3500,		
 		onSlideAfter: function ($slideElement, oldIndex, newIndex) {			
-			if(newIndex == 0) {
+			if(newIndex == 1) {
 				sliderAnimation1.restart();
 			}
 		},
