@@ -89,11 +89,11 @@ jQuery(function($) {
 		},
 		onSlideBefore: function ($slideElement, oldIndex, newIndex) {
 			sliderAnimation1.pause();	
-			sliderAnimation1.seek(0);
+			sliderAnimation1.seek(1);
 		},
 		onSliderLoad: function (currentIndex) {			
 			//sliderAnimation1.pause();      
-			if(currentIndex == 0) {				
+			if(currentIndex == 1) {				
         		sliderAnimation1.play();
 			}
 		}
