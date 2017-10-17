@@ -32,11 +32,17 @@ jQuery(function($) {
 <div id="homepage">
 	<div id="index-slides">
 		<ul class="bxslider">
+			<li>
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-0.jpg');"></div>
+			</li>
 			<li class="slider-1">
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"><a href="<?php echo site_url('spirit')?>"></a></div>
 			</li>
 			<li>
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-sssj.jpg');"><a href="<?php echo site_url('real-estate/sz-shishan')?>"></a></div>
+			</li>
+			<li>
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-yueshan.jpg');"><a href="<?php echo site_url('real-estate/sh-yueshan')?>"></a></div>
 			</li>
 			<li>
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.sungeek.com.cn/"></a></div>
