@@ -11,7 +11,7 @@
 	</div>
 	<div class="article">
 		<div class="section">
-			<!--<div class="subtitle">公司总部</div>-->
+			<div class="subtitle">集团总部</div>
 			<div class="text">
 				<p class="title">公司地址：</p>
 				<p>上海市闵行区新镇路1399号宝龙城T5栋5楼</p>
