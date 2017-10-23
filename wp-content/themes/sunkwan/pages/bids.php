@@ -13,7 +13,7 @@
 	<div class="article side">
 		<p class="title">联系方式</p>
 		<div class="contact">
-			<p>电话：021-60716181 * 8086</p>		
+			<p>电话：021-60716181 * 8112</p>		
 			<p>邮箱：liq@sunkwan.com.cn</p>		
 		</div>		
 	</div>

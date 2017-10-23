@@ -11,20 +11,22 @@
 	</div>
 	<div class="article">
 		<div class="section">
-			<div class="subtitle">公司总部</div>	
+			<!--<div class="subtitle">公司总部</div>-->
 			<div class="text">
 				<p class="title">公司地址：</p>
-				<p>上海市宝山区淞兴西路248号3号楼</p>
+				<p>上海市闵行区新镇路1399号宝龙城T5栋5楼</p>
 			</div>
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">公司电话：</p>
 				<p>021-60716181</p>
 			</div>
+			<!--
 			<div class="text">
 				<p class="title">公司传真：</p>
 				<p>021-61812780</p>
 			</div>
+			-->
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">公司邮箱：</p>
@@ -33,15 +35,17 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="section">
-			<div class="subtitle">人力资源部</div>		
+			<div class="subtitle">人力资源中心</div>		
 			<div class="text">
 				<p class="title">电话：</p>
-				<p>021-60716181 * 8081</p>
+				<p>021-60716181 * 8228</p>
 			</div>
+			<!--
 			<div class="text">
 				<p class="title">传真：</p>
 				<p>021-61812780</p>
 			</div>
+			-->
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">邮箱：</p>
@@ -50,15 +54,17 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="section">
-			<div class="subtitle">市场营销部</div>			
+			<div class="subtitle">品牌营销中心</div>			
 			<div class="text">
 				<p class="title">电话：</p>
-				<p>021-60716181 * 8058</p>
+				<p>021-60716181 * 8204</p>
 			</div>
+			<!--
 			<div class="text">
 				<p class="title">传真：</p>
 				<p>021-61812780</p>
 			</div>
+			-->
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">邮箱：</p>
@@ -67,15 +73,17 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="section">
-			<div class="subtitle">招采部 </div>			
+			<div class="subtitle">成本合约中心</div>			
 			<div class="text">
 				<p class="title">电话：</p>
-				<p>021-60716181 * 8086</p>
+				<p>021-60716181 * 8112</p>
 			</div>
+			<!--
 			<div class="text">
 				<p class="title">传真：</p>
 				<p>021-61812780</p>
 			</div>
+			-->
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">邮箱：</p>
@@ -97,7 +105,7 @@
 			<div class="clearfix"></div>
 			<div class="text">
 				<p class="title">合肥上坤置业有限公司</p>
-				<p>合肥市庐阳区濉溪路335号蓝钻商务中心A座5楼509室</p>
+				<p>合肥市蜀山区潜山路与佛子岭路交口绿地，蓝海国际大厦B座14楼</p>
 			</div>
 			<div class="clearfix"></div>
 			<div class="text">
