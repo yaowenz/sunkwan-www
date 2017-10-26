@@ -14,7 +14,7 @@
 			<div class="subtitle">集团总部</div>
 			<div class="text">
 				<p class="title">公司地址：</p>
-				<p>上海市闵行区新镇路1399号宝龙城T5栋5楼</p>
+				<p>上海市闵行区新镇路1399号宝龙城T5栋8-10楼</p>
 			</div>
 			<div class="clearfix"></div>
 			<div class="text">
