@@ -45,7 +45,7 @@ window.onhashchange=function(){
 				</ul>
 			</div>
 			<div>
-				<a href="<?php echo site_url('bids')?>">招标公告</a>
+				<a href="http://zhaocai.sunkwan.com.cn/">招标公告</a>
 			</div>
 			<div>
 				<a href="http://sunkwan.zhiye.com/search">加入我们</a>
