@@ -20,7 +20,7 @@
     };
 } (window, jQuery));
 
-jQuery(function($) {	
+jQuery(function($) {
 	// 四块缩略图区域
     jQuery("#cardArea").cardArea()
     
@@ -28,50 +28,51 @@ jQuery(function($) {
     var sliderAnimation1 = anime.timeline({
         loop: false,
         autoplay: false
-    });    
+    });
     sliderAnimation1.pause();
     sliderAnimation1
     .add({
       targets: '#index-slides .slider-1 .title-wei',
-      opacity: 1,     
+      opacity: 1,
       easing: 'linear',
       duration: 250,
     })
     .add({
       targets: '#index-slides .slider-1 .title-yiju',
-      opacity: 1,     
+      opacity: 1,
       easing: 'linear',
       duration: 500
     })
     .add({
       targets: '#index-slides .slider-1 .title-er',
-      opacity: 1,     
+      opacity: 1,
       easing: 'linear',
-      duration: 100      
+      duration: 100
     })
     .add({
         targets: '#index-slides .slider-1 .title-lai',
-        opacity: 1,     
+        opacity: 1,
         easing: 'linear',
-        duration: 500        
+        duration: 500
      })
      .add({
         targets: '#index-slides .slider-1 .title-coming',
         translateX: -100,
-        opacity: 1,     
+        opacity: 1,
         easing: 'easeOutCubic',
-        duration: 500        
+        duration: 500
      })
      .add({
     	 targets: '#index-slides .slider-1 .bg-image',
     	 scale: 1.05,
-    	 opacity: 1,    	
+    	 opacity: 1,
          offset: 0,
          duration: 2000,
          easing: 'easeOutCubic'
      });
     
     // Slider
+    var animationSliderIndex = 0;
     jQuery('.bxslider').bxSlider({
 		mode: 'fade',
 		preload: 'all',
@@ -81,27 +82,27 @@ jQuery(function($) {
 		autoStart: true,
 		auto: true,
 		speed: 1000,
-		pause: 3500,		
-		onSlideAfter: function ($slideElement, oldIndex, newIndex) {			
-			if(newIndex == 1) {
+		pause: 3500,
+		onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+			if(newIndex == animationSliderIndex) {
 				sliderAnimation1.restart();
 			}
 		},
 		onSlideBefore: function ($slideElement, oldIndex, newIndex) {
-			sliderAnimation1.pause();	
-			sliderAnimation1.seek(1);
+			sliderAnimation1.pause();
+			sliderAnimation1.seek(animationSliderIndex);
 		},
-		onSliderLoad: function (currentIndex) {			
-			//sliderAnimation1.pause();      
-			if(currentIndex == 1) {				
+		onSliderLoad: function (currentIndex) {
+			//sliderAnimation1.pause();
+			if(currentIndex == animationSliderIndex) {
         		sliderAnimation1.play();
 			}
 		}
-  	}); 
+  	});
 
   	// 城市切换
   	$('.card.layer.projects select').change(function() {
-  		location.href = '<?php echo site_url('real-estates') ?>';  	
+  		location.href = '<?php echo site_url('real-estates') ?>';
   	});
 
   	 // 集团新闻滚动
@@ -114,7 +115,7 @@ jQuery(function($) {
 		autoStart: true,
 		auto: true,
 		speed: 500,
-		pause: 3000,		
+		pause: 3000,
   	});
 
 	var eventsSlider;
@@ -122,15 +123,15 @@ jQuery(function($) {
   	var sliderCollection = {
   		news: newsSlider,
   		events: eventsSlider
-  	};  	
+  	};
 
   	// 新闻切换
   	$('.news-category a').click(function() {
-  	  	var tab = $(this).data('tab');  	  	
+  	  	var tab = $(this).data('tab');
   		$('.news-category a').removeClass('active');
   		$(this).addClass('active');
   		$('.news-list').removeClass('active');
-  		$('.news-list.tab-' + tab).addClass('active');  
+  		$('.news-list.tab-' + tab).addClass('active');
 
 		// Should init here, to calc the size
   		if (tab == 'events' && eventsSlider == null) {
@@ -143,12 +144,12 @@ jQuery(function($) {
   	  			autoStart: true,
   	  			auto: true,
   	  			speed: 500,
-  	  			pause: 3000,		
+  	  			pause: 3000,
   	  	  	});
   	  	  	sliderCollection['events'] = eventsSlider;
-  	  	}	
+  	  	}
   		sliderCollection[tab].reloadSlider();
-  	}); 
+  	});
 
 
   	// 视频切换
@@ -161,9 +162,9 @@ jQuery(function($) {
 		autoStart: false,
 		auto: false,
 		speed: 500,
-		pause: 3000,	
-		pager: false	
-  	});	
+		pause: 3000,
+		pager: false
+  	});
   	 	  
 });
 
@@ -177,26 +178,23 @@ function playVideo(src) {
 		success: function() {
 			jQuery('#sunkwan_video')[0].play();
 		}
-  	});  
+  	});
 }
 
 </script>
 <div id="index-slides">
 	<ul class="bxslider">
-		<li class="slider-0">
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-0.jpg');"></div>
-		</li>
 		<li class="slider-1">
 			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-1.jpg');"></div>
 			<img class="title-wei" src="<?php echo get_template_directory_uri()?>/images/title-wei.png" />
 			<img class="title-yiju" src="<?php echo get_template_directory_uri()?>/images/title-yiju.png" />
 			<img class="title-er" src="<?php echo get_template_directory_uri()?>/images/title-er.png" />
-			<img class="title-lai" src="<?php echo get_template_directory_uri()?>/images/title-lai.png" />			
+			<img class="title-lai" src="<?php echo get_template_directory_uri()?>/images/title-lai.png" />
 			<img class="title-coming" src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
-		</li>		
+		</li>
 		<li>
 			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"><a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a></div>
-		</li>	
+		</li>
 		<li>
 			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');"><a href="<?php echo site_url('real-estate/sh-yueshan')?>" target="_blank"></a></div>
 		</li>
@@ -218,7 +216,7 @@ function playVideo(src) {
 			</div>
 		</li>
 		<li class="card-item">
-			<div class="card layer video">				
+			<div class="card layer video">
 				<p class="title">企业视频</p>
 				<p class="title eng">Intro<p>
 				<div class="card-icon">
@@ -227,7 +225,7 @@ function playVideo(src) {
 			</div>
 			<div class="video-clip-wrapper">
 				<ul id="video-clips">
-					<li>						
+					<li>
 						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-1.jpg" />
 						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video.mp4')?>');" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 					</li>
@@ -254,8 +252,8 @@ function playVideo(src) {
 					<option>南京</option>
 				</select>
 				<div class="replace img"></div>
-				<p class="title">全国布局</p>			
-				<p class="title eng">National Layout<p>				
+				<p class="title">全国布局</p>
+				<p class="title eng">National Layout<p>
 			</div>
 		</li>
 	</ul>
@@ -270,18 +268,18 @@ function playVideo(src) {
 			<!-- 集团新闻 -->
 			<div class="tab-news active news-list">
 				<div class="bxslider-news">
-					<?php 
+					<?php
 						$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
 						$index = 0;
 						if ( $the_query->have_posts() ) :
-							$count = $the_query->post_count;						
+							$count = $the_query->post_count;
 							while ( $the_query->have_posts() ) :
 								$the_query->the_post();
 								$index ++;
 								if ($index % 2 == 1):
 					?>
 					<ul>
-					<?php 
+					<?php
 								endif;
 					?>
 						<li><span class="title"><a href="<?php the_permalink()?>" title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
@@ -289,28 +287,28 @@ function playVideo(src) {
 								if ($index % 2 == 0 || $index == $count):
 					?>
 					</ul>
-					<?php 
+					<?php
 								endif;
-							endwhile;					
+							endwhile;
 						endif;
-					?>			
+					?>
 				</div>
 			</div>
 			<!-- 最新活动-->
 			<div class="tab-events news-list">
-				<div class="bxslider-news">				
-				<?php 
+				<div class="bxslider-news">
+				<?php
 					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6] );
 					$index = 0;
 					$count = 0;
-					if ( $the_query->have_posts() ) :								
+					if ( $the_query->have_posts() ) :
 						while ( $the_query->have_posts() ) :
 							$the_query->the_post();
 							$index ++;
 							if ($index % 2 == 1):
 				?>
 				<ul>
-				<?php 
+				<?php
 							endif;
 				?>
 				
@@ -319,12 +317,12 @@ function playVideo(src) {
 							if ($index % 2 == 0 || $index == $count):
 				?>
 				</ul>
-				<?php 
+				<?php
 							endif;
-						endwhile;					
+						endwhile;
 					endif;
 					wp_reset_postdata();
-				?>			
+				?>
 				</div>
 			</div>
 		</div>

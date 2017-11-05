@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <script>
-jQuery(function($) {	
+jQuery(function($) {
 	$('.bxslider').bxSlider({
 		mode: 'fade',
 		preload: 'all',
@@ -11,30 +11,27 @@ jQuery(function($) {
 		auto: true,
 		speed: 1000,
 		pause: 3500,
-		touchEnabled: true	
+		touchEnabled: true
 	
-  	}); 
+  	});
 
 
 	$('#video-clips').bxSlider({
 		mode: 'fade',
 		preload: 'all',
-		controls: false,		
+		controls: false,
 		infiniteLoop: true,
 		autoHover: false,
 		autoStart: false,
 		auto: false,
 		speed: 500,
-		touchEnabled: true		
+		touchEnabled: true
   	});
 });
 </script>
 <div id="homepage">
 	<div id="index-slides">
 		<ul class="bxslider">
-			<li>
-				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-0.jpg');"></div>
-			</li>
 			<li class="slider-1">
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-1.jpg');"><a href="<?php echo site_url('spirit')?>"></a></div>
 			</li>
@@ -48,7 +45,7 @@ jQuery(function($) {
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-geek.jpg');"><a href="http://www.sungeek.com.cn/"></a></div>
 			</li>
 		</ul>
-	</div>	
+	</div>
 	<div id="index-about">
 		<div class="about-text">
 			<h2 class="header">关于上坤</h2>
@@ -58,7 +55,7 @@ jQuery(function($) {
 			<div class="link-button"><a href="<?php echo site_url('about')?>">查看更多</a></div>
 		</div>
 	</div>
-	<div id="index-culture">	
+	<div id="index-culture">
 		<div class="culture-image">
 			<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-culture.jpg" width="100%" style="vertical-align:bottom" />
 		</div>
@@ -70,11 +67,11 @@ jQuery(function($) {
 			<div class="link-button"><a href="<?php echo site_url('spirit')?>">查看更多</a></div>
 		</div>
 	</div>
-	<div id="index-branches">		
+	<div id="index-branches">
 		<img src="<?php echo get_template_directory_uri()?>/images/mobile/index-branches.jpg" width="100%" style="vertical-align:bottom" />
 		<div class="branches-text">
-			<h2 class="header red">核心业务</h2>		
-			<div class="sep line"></div>			
+			<h2 class="header red">核心业务</h2>
+			<div class="sep line"></div>
 			<div class="link-button"><a href="<?php echo site_url('real-estates')?>">地产开发</a></div>
 			<div class="link-button"><a href="<?php echo site_url('commercial-assets/')?>">商业资产管理</a></div>
 			<div class="link-button"><a href="<?php echo site_url('fund')?>">地产基金</a></div>
@@ -84,32 +81,32 @@ jQuery(function($) {
 		<h2 class="header red">新闻中心</h2>
 		<div class="sep line"></div>
 		<ul>
-			<?php 
+			<?php
 				$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 4] );
 			
 				if ( $the_query->have_posts() ) :
-					$count = $the_query->post_count;						
+					$count = $the_query->post_count;
 					while ( $the_query->have_posts() ) :
-						$the_query->the_post();					
+						$the_query->the_post();
 			?>
 			<li data-link="<?php the_permalink()?>">
 				<p class="date"><?php the_date();?></p>
-				<p class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></p>			
+				<p class="title"><a href="<?php the_permalink()?>"><?php the_title();?></a></p>
 				<p class="thumb"><a href="<?php the_permalink()?>"><img src="<?php echo the_post_thumbnail_url();?>" /></a></p>
 			
 			</li>
-			<?php 	
-					endwhile;					
+			<?php
+					endwhile;
 				endif;
 			?>
 		</ul>
 		<div class="link-button"><a href="<?php echo site_url('category/news')?>">查看更多</a></div>
-	</div>	
-	<div id="index-video">	
+	</div>
+	<div id="index-video">
 		<h2 class="header red">企业视频</h2>
-		<div class="sep line"></div>		
-		<div id="video-clips">	
-			<div>		
+		<div class="sep line"></div>
+		<div id="video-clips">
+			<div>
 				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video.jpg"><source src="<?php echo site_url('sunkwan-video.mp4')?>" type="video/mp4"></video>
 			</div>
 			<div>
@@ -118,7 +115,7 @@ jQuery(function($) {
 			<div>
 				<video height="auto" preload="metadata" controls="controls" poster="<?php echo get_template_directory_uri()?>/images/mobile/index-video-clip-team.jpg"><source src="<?php echo site_url('sunkwan-video-team.mp4')?>" type="video/mp4"></video>
 			</div>
-		</div>		
+		</div>
 	</div>
 </div>
 <?php get_footer();?>
