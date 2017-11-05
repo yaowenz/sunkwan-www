@@ -132,7 +132,7 @@ p {
 
 .article.left {float:left;width:70%;padding:30px}
 .article.side {float:left;padding-left:30px}
-.article .post img {max-width:100%}
+.article .post img {max-width:100%;height:auto!important}
 
 /** LayerUI **/
 .layui-layer.layui-layer-page {background:black;padding:50px 100px;}

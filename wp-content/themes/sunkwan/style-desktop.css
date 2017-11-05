@@ -250,7 +250,7 @@ p {
   padding-left: 30px; }
 
 .article .post img {
-  max-width: 100%; }
+  max-width: 100%; height:auto!important}
 
 /** LayerUI **/
 .layui-layer.layui-layer-page {
