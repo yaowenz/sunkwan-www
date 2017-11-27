@@ -1,6 +1,6 @@
 <script>
 jQuery(function($) {
-	$('.example').click(function() {		
+	$('.example').click(function() {
 		location.href = '<?php echo site_url('real-estates');?>/' + $(this).data('loc');
 	});
 });
@@ -71,6 +71,14 @@ jQuery(function($) {
 						<div class="square"></div>
 						<div class="head">上坤狮山四季 / 苏州</div>
 						<div class="content">美世低密精装智慧社区</div>
+					</div>
+				</div>
+				<div class="example" data-loc="project-hefei">
+					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-hefei.jpg')"></div>
+					<div class="description">
+						<div class="square"></div>
+						<div class="head">合肥庐阳N1701地块 / 合肥</div>
+						<div class="content">一环北 双地铁 海派精奢住区</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>

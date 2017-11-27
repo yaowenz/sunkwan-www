@@ -8,17 +8,14 @@
 }
 
 .primary.content.project {
-	background: black;
 	width: 100%
 }
 </style>
 <div class="banner cover real-estate"></div>
-<div class="primary content project" style="background: black">
+<div class="primary content project">
 	<div class="article">
 		<div>
-			<img
-				src="<?php echo get_template_directory_uri()?>/images/projects/project-sssj3.jpg"
-				width="100%" />
+			<img style="max-width:100%" src="<?php echo get_template_directory_uri()?>/images/projects/project-hefei-full.jpg" width="1400" />
 		</div>
 	</div>
 </div>
