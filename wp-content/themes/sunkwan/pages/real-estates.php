@@ -19,8 +19,10 @@ jQuery(function($) {
 <div class="primary content real-estate">
 	<div class="article">
 		<div class="section villa">
-			<div class="title"><span></span>高端别墅系</div>
-			<div class="row">				
+			<div class="title">
+				<span></span>高端别墅系
+			</div>
+			<div class="row">
 				<div class="example" data-loc="project-gytd">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-gytd.jpg')"></div>
 					<div class="description">
@@ -39,12 +41,14 @@ jQuery(function($) {
 				</div>
 				<div class="example"></div>
 				<div class="clearfix"></div>
-			</div>			
+			</div>
 		</div>
 		<div class="triangle-bottom"></div>
 		<div class="section green">
-			<div class="title"><span></span>绿色建筑系</div>
-			<div class="row">				
+			<div class="title">
+				<span></span>绿色建筑系
+			</div>
+			<div class="row">
 				<div class="example" data-loc="sh-yueshan">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-skys.jpg')"></div>
 					<div class="description">
@@ -70,12 +74,14 @@ jQuery(function($) {
 					</div>
 				</div>
 				<div class="clearfix"></div>
-			</div>			
+			</div>
 		</div>
 		<div class="triangle-bottom"></div>
 		<div class="section commerical">
-			<div class="title"><span></span>社区商业系</div>
-			<div class="row">				
+			<div class="title">
+				<span></span>社区商业系
+			</div>
+			<div class="row">
 				<div class="example" data-loc="project-csgc">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-csgc.jpg')"></div>
 					<div class="description">
@@ -101,11 +107,13 @@ jQuery(function($) {
 					</div>
 				</div>
 				<div class="clearfix"></div>
-			</div>			
+			</div>
 		</div>
 		<div class="triangle-bottom"></div>
 		<div class="section young">
-			<div class="title"><span></span>青年住宅系</div>
+			<div class="title">
+				<span></span>青年住宅系
+			</div>
 			<div class="row">
 				<div class="example" data-loc="project-yuecheng">
 					<div class="img" style="background-image:url('<?php echo get_template_directory_uri()?>/images/projects/project-yc.jpg')"></div>
@@ -116,7 +124,7 @@ jQuery(function($) {
 					</div>
 				</div>
 				<div class="clearfix"></div>
-			</div>			
+			</div>
 		</div>
 	</div>
 </div>

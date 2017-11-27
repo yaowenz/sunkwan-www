@@ -13,6 +13,6 @@
 				<?php the_post(); the_content();?>
 			</div>
 			<div class="clear"></div>
-		</div>			
+		</div>
 	</div>
 </div>

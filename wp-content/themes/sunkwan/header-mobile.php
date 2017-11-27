@@ -2,19 +2,23 @@
 <div id="nav">
 	<div class="header wrapper">
 		<div class="menu-link menu-toggle-button">
-			<img src="<?php echo get_template_directory_uri()?>/images/mobile/icon-menu.png" valign="middle" height="40%" />
+			<img
+				src="<?php echo get_template_directory_uri()?>/images/mobile/icon-menu.png"
+				valign="middle" height="40%" />
 		</div>
 		<div class="sunkwan-logo">
-			<span><img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" height="40%" /></span>
+			<span><img
+				src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png"
+				valign="middle" height="40%" /></span>
 		</div>
-	</div>		
+	</div>
 </div>
-<div id="menu">	
+<div id="menu">
 	<div class="overlay hidden">
-		<div class="menu-list">	
+		<div class="menu-list">
 			<div>
-				<a href="<?php echo site_url()?>">首页</a>				
-			</div>	
+				<a href="<?php echo site_url()?>">首页</a>
+			</div>
 			<div>
 				<a>关于上坤</a>
 				<ul class="submenu hidden">
@@ -49,15 +53,15 @@
 					<li><a href="<?php echo site_url('philosophy')?>">用人理念</a></li>
 					<!-- <li><a href="<?php echo site_url('employees')?>">员工活动</a></li>-->
 					<li><a href="http://sunkwan.zhiye.com/search">人才招聘</a></li>
-					<!-- <li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li> -->					
+					<!-- <li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li> -->
 				</ul>
 			</div>
 			<div>
 				<a href="<?php echo site_url('contact-us')?>">联系我们</a>
-				</div>				
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
 <script type="text/javascript">

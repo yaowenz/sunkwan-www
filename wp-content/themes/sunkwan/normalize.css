@@ -4,11 +4,13 @@
  * Normalize
  *
  */
-html {	
+html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	height: 100%;
-	font-family: 'PingFang SC', 'Lantinghei SC', "微軟正黑體", "Microsoft JhengHei", 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+	font-family: 'PingFang SC', 'Lantinghei SC', "微軟正黑體",
+		"Microsoft JhengHei", 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑',
+		STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -18,36 +20,22 @@ body {
 	overflow-x: hidden;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, main, menu,
+	nav, section, summary {
 	display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
 	display: inline-block;
 	vertical-align: baseline;
 }
 
-audio:not([controls]) {
+audio:not ([controls] ) {
 	display: none;
 	height: 0;
 }
 
-[hidden],
-template {
+[hidden], template {
 	display: none;
 }
 
@@ -56,15 +44,15 @@ a {
 }
 
 p {
-	margin:0px;padding:0px
+	margin: 0px;
+	padding: 0px
 }
 
 abbr[title] {
 	border-bottom: 1px dotted;
 }
 
-b,
-strong {
+b, strong {
 	font-weight: 700;
 }
 
@@ -72,8 +60,7 @@ small {
 	font-size: 80%;
 }
 
-sub,
-sup {
+sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
@@ -92,7 +79,7 @@ img {
 	border: 0;
 }
 
-svg:not(:root) {
+svg:not (:root ) {
 	overflow: hidden;
 }
 
@@ -106,18 +93,11 @@ hr {
 	box-sizing: content-box;
 }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
 	font-size: 1em;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
 	color: inherit;
 	font: inherit;
 	margin: 0;
@@ -131,35 +111,27 @@ button {
 	overflow: visible;
 }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
 	max-width: 100%;
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"]
+	{
 	-webkit-appearance: button;
 	cursor: pointer;
 }
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
 	cursor: default;
 	opacity: .5;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -167,8 +139,8 @@ input[type="radio"] {
 	padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+	{
 	height: auto;
 }
 
@@ -176,8 +148,8 @@ input[type="search"] {
 	-webkit-appearance: textfield;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
+	{
 	-webkit-appearance: none;
 }
 
@@ -188,7 +160,7 @@ fieldset {
 	padding: 0.875em;
 }
 
-fieldset > :last-child {
+fieldset>:last-child {
 	margin-bottom: 0;
 }
 
@@ -207,14 +179,20 @@ optgroup {
 }
 
 table {
-	border-collapse:collapse;border-spacing:0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-a, a:visited {text-decoration:none;color:black}
+a, a:visited {
+	text-decoration: none;
+	color: black
+}
 
-div:focus {outline:none!important}
+div:focus {
+	outline: none !important
+}
 
 .clear {
-	float:none!important;
-	clear:both!important;
+	float: none !important;
+	clear: both !important;
 }

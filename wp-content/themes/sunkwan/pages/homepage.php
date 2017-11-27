@@ -1,12 +1,12 @@
-<?php 
-get_header(); 
-
-if(is_mobile()) {
+<?php
+get_header();
+if (is_mobile())
+{
 	include 'homepage-mobile.php';
 }
-else {
+else
+{
 	include 'homepage-desktop.php';
 }
-
 get_footer();
 ?>

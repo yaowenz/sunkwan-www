@@ -1,15 +1,12 @@
 <?php
-
-if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) || ! WP_UNINSTALL_PLUGIN ||
-	dirname( WP_UNINSTALL_PLUGIN ) != dirname( plugin_basename( __FILE__ ) ) ) {
-
-	exit;
+if (! defined('WP_UNINSTALL_PLUGIN') || ! WP_UNINSTALL_PLUGIN ||
+ dirname(WP_UNINSTALL_PLUGIN) != dirname(plugin_basename(__FILE__)))
+{
+	exit();
 }
-
-delete_option( 'tadv_settings' );
-delete_option( 'tadv_admin_settings' );
-delete_option( 'tadv_version' );
-
+delete_option('tadv_settings');
+delete_option('tadv_admin_settings');
+delete_option('tadv_version');
 // Delete old options
 delete_option('tadv_options');
 delete_option('tadv_toolbars');

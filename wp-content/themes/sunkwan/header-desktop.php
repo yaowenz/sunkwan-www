@@ -13,12 +13,14 @@ window.onhashchange=function(){
 <div id="nav">
 	<div class="header wrapper">
 		<div class="sunkwan-logo">
-			<span><img src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png" valign="middle" /></span>
+			<span><img
+				src="<?php echo get_template_directory_uri()?>/images/logo-sunkwan.png"
+				valign="middle" /></span>
 		</div>
 		<div class="menu">
 			<div>
-				<a href="<?php echo site_url()?>">首页</a>				
-			</div>	
+				<a href="<?php echo site_url()?>">首页</a>
+			</div>
 			<div>
 				<a href="<?php echo site_url('about')?>">关于上坤</a>
 				<ul class="submenu">
@@ -53,13 +55,16 @@ window.onhashchange=function(){
 					<li><a href="<?php echo site_url('philosophy')?>">用人理念</a></li>
 					<!-- <li><a href="<?php echo site_url('employees')?>">员工活动</a></li> -->
 					<li><a href="http://sunkwan.zhiye.com/search">人才招聘</a></li>
-					<!-- <li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li> -->					
+					<!-- <li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li> -->
 				</ul>
 			</div>
 			<div>
 				<a href="<?php echo site_url('contact-us')?>">联系我们</a>
-			</div>				
+			</div>
 		</div>
-		<div class="agent-link"><span>&gt;</span><a style="color:white" href="http://mp.weixin.qq.com/s?__biz=MzIwOTM3MTE0Mg==&mid=100002202&idx=1&sn=a84378548248297c9e97949fdc29f724">全民经纪人</a></div>
+		<div class="agent-link">
+			<span>&gt;</span><a style="color: white"
+				href="http://mp.weixin.qq.com/s?__biz=MzIwOTM3MTE0Mg==&mid=100002202&idx=1&sn=a84378548248297c9e97949fdc29f724">全民经纪人</a>
+		</div>
 	</div>
 </div>

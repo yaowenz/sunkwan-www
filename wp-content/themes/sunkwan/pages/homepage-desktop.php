@@ -186,20 +186,33 @@ function playVideo(src) {
 	<ul class="bxslider">
 		<li class="slider-1">
 			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-1.jpg');"></div>
-			<img class="title-wei" src="<?php echo get_template_directory_uri()?>/images/title-wei.png" />
-			<img class="title-yiju" src="<?php echo get_template_directory_uri()?>/images/title-yiju.png" />
-			<img class="title-er" src="<?php echo get_template_directory_uri()?>/images/title-er.png" />
-			<img class="title-lai" src="<?php echo get_template_directory_uri()?>/images/title-lai.png" />
-			<img class="title-coming" src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
+			<img class="title-wei"
+			src="<?php echo get_template_directory_uri()?>/images/title-wei.png" />
+			<img class="title-yiju"
+			src="<?php echo get_template_directory_uri()?>/images/title-yiju.png" />
+			<img class="title-er"
+			src="<?php echo get_template_directory_uri()?>/images/title-er.png" />
+			<img class="title-lai"
+			src="<?php echo get_template_directory_uri()?>/images/title-lai.png" />
+			<img class="title-coming"
+			src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
 		</li>
 		<li>
-			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');"><a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a></div>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');">
+				<a href="<?php echo site_url('real-estate/sz-shishan')?>"
+					target="_blank"></a>
+			</div>
 		</li>
 		<li>
-			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');"><a href="<?php echo site_url('real-estate/sh-yueshan')?>" target="_blank"></a></div>
+			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');">
+				<a href="<?php echo site_url('real-estate/sh-yueshan')?>"
+					target="_blank"></a>
+			</div>
 		</li>
 		<li>
-			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');"><a href="http://www.sungeek.com.cn/" target="_blank"></a></div>
+			<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-geek.jpg');">
+				<a href="http://www.sungeek.com.cn/" target="_blank"></a>
+			</div>
 		</li>
 	</ul>
 </div>
@@ -207,35 +220,55 @@ function playVideo(src) {
 	<ul id="cardArea" class="card-area clearfix">
 		<li class="card-item active">
 			<div class="card layer culture">
-				<p class="title">品牌文化<p>
+				<p class="title">品牌文化
+				
+				
+				<p>
+				
+				
 				<p class="title eng">Brand</p>
 				<div class="card-icon">
-					<img src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
+					<img
+						src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
 				</div>
-				<div class="replace img"><a href="<?php echo site_url('spirit')?>"></a></div>
+				<div class="replace img">
+					<a href="<?php echo site_url('spirit')?>"></a>
+				</div>
 			</div>
 		</li>
 		<li class="card-item">
 			<div class="card layer video">
 				<p class="title">企业视频</p>
-				<p class="title eng">Intro<p>
+				<p class="title eng">Intro
+				
+				
+				<p>
+				
+				
 				<div class="card-icon">
-					<img style="cursor:pointer" onclick="playVideo()" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					<img style="cursor: pointer" onclick="playVideo()"
+						src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 				</div>
 			</div>
 			<div class="video-clip-wrapper">
 				<ul id="video-clips">
-					<li>
-						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-1.jpg" />
-						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video.mp4')?>');" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					<li><img
+						src="<?php echo get_template_directory_uri()?>/images/index-video-clip-1.jpg" />
+						<img class="btn-play"
+						onclick="playVideo('<?php echo site_url('sunkwan-video.mp4')?>');"
+						src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 					</li>
-					<li>
-						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-2.jpg" />
-						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video-wanhui.mp4')?>');"  src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					<li><img
+						src="<?php echo get_template_directory_uri()?>/images/index-video-clip-2.jpg" />
+						<img class="btn-play"
+						onclick="playVideo('<?php echo site_url('sunkwan-video-wanhui.mp4')?>');"
+						src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 					</li>
-					<li>
-						<img src="<?php echo get_template_directory_uri()?>/images/index-video-clip-team.jpg" />
-						<img class="btn-play" onclick="playVideo('<?php echo site_url('sunkwan-video-team.mp4')?>');"  src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					<li><img
+						src="<?php echo get_template_directory_uri()?>/images/index-video-clip-team.jpg" />
+						<img class="btn-play"
+						onclick="playVideo('<?php echo site_url('sunkwan-video-team.mp4')?>');"
+						src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 					</li>
 				</ul>
 			</div>
@@ -253,7 +286,11 @@ function playVideo(src) {
 				</select>
 				<div class="replace img"></div>
 				<p class="title">全国布局</p>
-				<p class="title eng">National Layout<p>
+				<p class="title eng">National Layout
+				
+				
+				<p>
+			
 			</div>
 		</li>
 	</ul>
@@ -262,34 +299,43 @@ function playVideo(src) {
 			<p class="title">新闻动态</p>
 			<p class="title eng">News</p>
 			<p class="news-category">
-				<a data-tab="news" class="active">集团新闻</a>
-				<a data-tab="events">最新活动</a>
+				<a data-tab="news" class="active">集团新闻</a> <a data-tab="events">最新活动</a>
 			</p>
 			<!-- 集团新闻 -->
 			<div class="tab-news active news-list">
 				<div class="bxslider-news">
 					<?php
-						$the_query = new WP_Query(['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6] );
-						$index = 0;
-						if ( $the_query->have_posts() ) :
-							$count = $the_query->post_count;
-							while ( $the_query->have_posts() ) :
-								$the_query->the_post();
-								$index ++;
-								if ($index % 2 == 1):
-					?>
+					$the_query = new WP_Query(
+					['category_name' => 'news', 'post_type' => 'post', 'posts_per_page' => 6]);
+					$index = 0;
+					if ($the_query->have_posts())
+					:
+						$count = $the_query->post_count;
+						while ($the_query->have_posts())
+						:
+							$the_query->the_post();
+							$index ++;
+							if ($index % 2 == 1)
+							:
+								?>
 					<ul>
-					<?php
+					
+							<?php
 								endif;
-					?>
-						<li><span class="title"><a href="<?php the_permalink()?>" title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
+							?>
+						<li><span class="title"><a href="<?php the_permalink()?>"
+								title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
 					<?php
-								if ($index % 2 == 0 || $index == $count):
-					?>
+							if ($index % 2 == 0 || $index == $count)
+							:
+								?>
 					</ul>
-					<?php
+					
+							<?php
 								endif;
-							endwhile;
+						endwhile
+						;
+					
 						endif;
 					?>
 				</div>
@@ -298,23 +344,29 @@ function playVideo(src) {
 			<div class="tab-events news-list">
 				<div class="bxslider-news">
 				<?php
-					$the_query = new WP_Query(['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6] );
-					$index = 0;
-					$count = 0;
-					if ( $the_query->have_posts() ) :
-						while ( $the_query->have_posts() ) :
-							$the_query->the_post();
-							$index ++;
-							if ($index % 2 == 1):
-				?>
+				$the_query = new WP_Query(
+				['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6]);
+				$index = 0;
+				$count = 0;
+				if ($the_query->have_posts())
+				:
+					while ($the_query->have_posts())
+					:
+						$the_query->the_post();
+						$index ++;
+						if ($index % 2 == 1)
+						:
+							?>
 				<ul>
-				<?php
-							endif;
-				?>
 				
-					<li><span class="title"><a href="<?php the_permalink()?> "title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
+						<?php
+							endif;
+						?>
+				
+					<li><span class="title"><a href="<?php the_permalink()?> "
+								title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
 				<?php
-							if ($index % 2 == 0 || $index == $count):
+						if ($index % 2 == 0 || $index == $count):
 				?>
 				</ul>
 				<?php
