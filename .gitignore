@@ -5,3 +5,4 @@ wp-config.php
 .buildpath
 .project
 *.map
+wp-content/uploads/
