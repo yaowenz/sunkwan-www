@@ -38,12 +38,15 @@ jQuery(function($) {
 				</div>
 			</li>
 			<li>
+				<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180404-2-mobi.jpg');"></div>
+			</li>
+			<li>
 				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-sssj.jpg');">
 					<a href="<?php echo site_url('real-estate/sz-shishan')?>"></a>
 				</div>
 			</li>
 			<li>
-				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/mobile/index-slide-yueshan.jpg');">
+				<div class="bg-image" style="background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180404-mobi.jpg');">
 					<a href="<?php echo site_url('real-estate/sh-yueshan')?>"></a>
 				</div>
 			</li>
