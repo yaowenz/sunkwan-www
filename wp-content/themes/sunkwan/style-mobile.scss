@@ -161,7 +161,7 @@ html, body {overflow-x:hidden}
 	   & {width:100%;box-sizing:border-box;margin-top:0px}     
 	   .thumb {float:none;margin-bottom:0px;width:100%!important}	
 	   li {width:100%;box-sizing:border-box;margin-bottom:15px;border-bottom:1px dotted #ccc}	   
-	   li .brief {float:none;clear:both;margin:0px}
+	   li .brief {float:none;clear:both;margin:0px;width:100%}
 	   li a {margin-right:0px;display:inline-block;line-height:1.5}
 	   li p {margin-bottom:0px!important}
 	
@@ -224,6 +224,16 @@ html, body {overflow-x:hidden}
 	.spirit-bg {display:none}
 
 	.core-value {float:none!important;clear:both;width:80%!important;margin:auto}
+    .core-value-section {
+        & {width:33%;float:left;font-size:12px;margin-top:20px}
+        .section-text {
+            & {margin:auto;width:70px}
+            .circle {border:2px #D3000F solid;color:#D3000F;border-radius:50%;width:50px;height:50px;margin-left:2px}
+            .header {text-align:center;font-size:14px;padding:7px 0px 0px 0px}
+            .text {margin-top:15px}
+        }
+    }
+	
 }
 
 /* 地产基金 */

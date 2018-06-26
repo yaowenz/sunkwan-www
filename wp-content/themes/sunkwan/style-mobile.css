@@ -336,7 +336,8 @@ html, body {
 .content.news .entry-list li .brief {
   float: none;
   clear: both;
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
 
 .content.news .entry-list li a {
   margin-right: 0px;
@@ -461,6 +462,32 @@ html, body {
   clear: both;
   width: 80% !important;
   margin: auto; }
+
+.content.spirit .core-value-section {
+  width: 33%;
+  float: left;
+  font-size: 12px;
+  margin-top: 20px; }
+
+.content.spirit .core-value-section .section-text {
+  margin: auto;
+  width: 70px; }
+
+.content.spirit .core-value-section .section-text .circle {
+  border: 2px #D3000F solid;
+  color: #D3000F;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 2px; }
+
+.content.spirit .core-value-section .section-text .header {
+  text-align: center;
+  font-size: 14px;
+  padding: 7px 0px 0px 0px; }
+
+.content.spirit .core-value-section .section-text .text {
+  margin-top: 15px; }
 
 /* 地产基金 */
 .content.fund .advantage {

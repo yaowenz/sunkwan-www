@@ -720,6 +720,34 @@ p {
   top: 220px;
   z-index: -1; }
 
+.content.spirit .core-value {
+  margin-top: 20px; }
+
+.content.spirit .core-value-section {
+  width: 33%;
+  float: left; }
+
+.content.spirit .core-value-section .section-text {
+  margin: auto;
+  width: 150px; }
+
+.content.spirit .core-value-section .section-text .circle {
+  border: 2px #D3000F solid;
+  color: #D3000F;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0px 12px 0px 8px; }
+
+.content.spirit .core-value-section .section-text .header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  padding: 28px 30px; }
+
+.content.spirit .core-value-section .section-text .text {
+  margin-top: 15px; }
+
 /** 发展历程 **/
 .content.history .article {
   padding-top: 50px;
