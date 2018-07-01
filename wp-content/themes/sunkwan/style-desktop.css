@@ -708,8 +708,7 @@ p {
 /** 企业文化 **/
 .content.spirit .article {
   padding-top: 50px;
-  position: relative;
-  height: 1500px; }
+  position: relative; }
 
 .content.spirit .spirit-text {
   text-align: center;

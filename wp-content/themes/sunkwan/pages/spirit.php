@@ -47,7 +47,6 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
-		<div class="clearfix"></div>
 		<div style="float: left; width: 50%" class="core-value">
 			<div class="core-value-section">
 				<div class="section-text">
