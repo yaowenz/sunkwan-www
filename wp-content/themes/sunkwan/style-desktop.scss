@@ -281,8 +281,13 @@ p {
 .content.spirit {
 	.article {padding-top:50px;position:relative;height:1500px}
 	.spirit-text {text-align:center;margin-top:20px}
+	.spirit-text {
+		.arrow {margin:auto;width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #D3000F; font-size: 0; line-height: 0; }
+	    .subtitle {background:#D3000F;display:inline-block;width:180px;line-height:2;font-size:24px;color:white}
+        .paragraph {color:white;font-size:18px;width:60%;margin:auto;margin-bottom:100px;margin-top:40px}
+	}
 	.spirit-bg {position:absolute;top:220px;z-index:-1}
-	.core-value {margin-top:20px}
+	.core-value {margin-top:20px;margin-bottom:30px}
     .core-value-section {
 	    & {width:33%;float:left}
         .section-text {

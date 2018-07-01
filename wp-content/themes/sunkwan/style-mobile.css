@@ -450,9 +450,15 @@ html, body {
 
 .content.spirit .spirit-text {
   background-image: url("images/spirit-text-bg.jpg");
-  padding-top: 50px;
+  padding-top: 80px;
   background-size: cover;
   margin-top: -30px; }
+
+.content.spirit .spirit-text .subtitle {
+  font-size: 18px; }
+
+.content.spirit .spirit-text .paragraph {
+  font-size: 14px; }
 
 .content.spirit .spirit-bg {
   display: none; }
@@ -461,7 +467,8 @@ html, body {
   float: none !important;
   clear: both;
   width: 80% !important;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 30px; }
 
 .content.spirit .core-value-section {
   width: 33%;

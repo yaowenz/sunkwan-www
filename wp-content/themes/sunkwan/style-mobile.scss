@@ -220,10 +220,14 @@ html, body {overflow-x:hidden}
 	.article {padding:0px;height:auto}
 	.spirit-title img {width:50%}
 	.spirit-text img {width:80%}
-	.spirit-text {background-image:url('images/spirit-text-bg.jpg');padding-top:50px;background-size:cover;margin-top:-30px}
+	.spirit-text {background-image:url('images/spirit-text-bg.jpg');padding-top:80px;background-size:cover;margin-top:-30px}
+	.spirit-text {
+	    .subtitle {font-size:18px}
+		.paragraph {font-size:14px}
+	}
 	.spirit-bg {display:none}
 
-	.core-value {float:none!important;clear:both;width:80%!important;margin:auto}
+	.core-value {float:none!important;clear:both;width:80%!important;margin:auto;margin-bottom:30px}
     .core-value-section {
         & {width:33%;float:left;font-size:12px;margin-top:20px}
         .section-text {
