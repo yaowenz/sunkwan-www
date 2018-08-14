@@ -207,7 +207,7 @@ function playVideo(src) {
 			</div>
 		</li>
 		<li>
-			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180404.jpg');">
+			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180814.jpg');">
 				<a href="<?php echo site_url('real-estate/sh-yueshan')?>"
 					target="_blank"></a>
 			</div>
