@@ -54,7 +54,7 @@ window.onhashchange=function(){
 				<ul class="submenu">
 					<li><a href="<?php echo site_url('philosophy')?>">用人理念</a></li>
 					<!-- <li><a href="<?php echo site_url('employees')?>">员工活动</a></li> -->
-					<li><a href="http://special.zhaopin.com/campus/2018/sh/sk20072661">招贤纳士</a></li>
+					<li><a href="http://special.zhaopin.com/campus/2018/sh/sk20072661">校园招聘</a></li>
 					<!-- <li><a href="<?php echo site_url('recruit-graduation')?>">校园招聘</a></li> -->
 				</ul>
 			</div>
