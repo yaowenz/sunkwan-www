@@ -775,11 +775,6 @@ p {
   margin-top: 15px; }
 
 /** 发展历程 **/
-.content.history .article {
-  padding-top: 50px;
-  position: relative;
-  height: 2250px; }
-
 .content.history .history-text {
   padding: 100px 0px;
   text-align: center;

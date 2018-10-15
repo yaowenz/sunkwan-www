@@ -10,6 +10,9 @@ body {
 html, body {
   overflow-x: hidden; }
 
+.vdesktop {
+  display: none; }
+
 .link-button {
   margin: auto;
   padding: 15px 10px;

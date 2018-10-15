@@ -70,7 +70,17 @@ jQuery(function($) {
          duration: 2000,
          easing: 'easeOutCubic'
      });
-    
+
+    // 动态调整幻灯片高度
+    $(window).on('resize', function() {
+        console.log(333);
+        jQuery('.bxslider li').height(jQuery(window).width() / 2.1);
+    });
+
+    $(document).ready(function() {
+    	$(window).resize();
+    });
+
     // Slider
     var animationSliderIndex = 0;
     jQuery('.bxslider').bxSlider({
@@ -81,7 +91,7 @@ jQuery(function($) {
 		autoHover: true,
 		autoStart: true,
 		auto: true,
-		speed: 1000,
+		speed: 300,
 		pause: 3500,
 		onSlideAfter: function ($slideElement, oldIndex, newIndex) {
 			if(newIndex == animationSliderIndex) {
@@ -111,11 +121,10 @@ jQuery(function($) {
 		preload: 'all',
 		controls: false,
 		infiniteLoop: true,
-		autoHover: true,
-		autoStart: true,
 		auto: true,
-		speed: 500,
-		pause: 3000,
+		autoHover: true,
+		speed: 300,
+		pause: 3000
   	});
 
 	var eventsSlider;
@@ -198,18 +207,23 @@ function playVideo(src) {
 			src="<?php echo get_template_directory_uri()?>/images/title-coming.png" />
 		</li>
 		<li>
-			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180404-2.jpg');"></div>
-		</li>
-		<li>
-			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');">
-				<a href="<?php echo site_url('real-estate/sz-shishan')?>"
-					target="_blank"></a>
+			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-3.jpg');">
+				<a href="<?php echo site_url('real-estate/sh-yueshan')?>" target="_blank"></a>
 			</div>
 		</li>
 		<li>
-			<div class="bg-image" style="background-position:top center;background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180814.jpg');">
-				<a href="<?php echo site_url('real-estate/sh-yueshan')?>"
-					target="_blank"></a>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-4.jpg');">
+				<a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a>
+			</div>
+		</li>
+		<li>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-5.jpg');">
+				<a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a>
+			</div>
+		</li>
+		<li>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-2.jpg');">
+				<a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a>
 			</div>
 		</li>
 		<li>
@@ -217,22 +231,19 @@ function playVideo(src) {
 				<a href="http://www.sungeek.com.cn/" target="_blank"></a>
 			</div>
 		</li>
+		<li>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/slides/slide-20180404-2.jpg');"></div>
+		</li>
 	</ul>
 </div>
 <div id="intro-boxes">
 	<ul id="cardArea" class="card-area clearfix">
 		<li class="card-item active">
 			<div class="card layer culture">
-				<p class="title">品牌文化
-				
-				
-				<p>
-				
-				
+				<p class="title">品牌文化<p>
 				<p class="title eng">Brand</p>
 				<div class="card-icon">
-					<img
-						src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
+					<img src="<?php echo get_template_directory_uri()?>/images/icon-sk.png" />
 				</div>
 				<div class="replace img">
 					<a href="<?php echo site_url('spirit')?>"></a>
@@ -242,15 +253,9 @@ function playVideo(src) {
 		<li class="card-item">
 			<div class="card layer video">
 				<p class="title">企业视频</p>
-				<p class="title eng">Intro
-				
-				
-				<p>
-				
-				
+				<p class="title eng">Intro<p>
 				<div class="card-icon">
-					<img style="cursor: pointer" onclick="playVideo()"
-						src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
+					<img style="cursor: pointer" onclick="playVideo()" src="<?php echo get_template_directory_uri()?>/images/icon-player.png" />
 				</div>
 			</div>
 			<div class="video-clip-wrapper">
@@ -289,11 +294,7 @@ function playVideo(src) {
 				</select>
 				<div class="replace img"></div>
 				<p class="title">全国布局</p>
-				<p class="title eng">National Layout
-				
-				
-				<p>
-			
+				<p class="title eng">National Layout<p>
 			</div>
 		</li>
 	</ul>
@@ -351,32 +352,26 @@ function playVideo(src) {
 				['category_name' => 'events', 'post_type' => 'post', 'posts_per_page' => 6]);
 				$index = 0;
 				$count = 0;
-				if ($the_query->have_posts())
-				:
-					while ($the_query->have_posts())
-					:
+				if ($the_query->have_posts()) :
+					while ($the_query->have_posts()):
 						$the_query->the_post();
 						$index ++;
-						if ($index % 2 == 1)
-						:
-							?>
+						if ($index % 2 == 1):
+				?>
 				<ul>
-				
-						<?php
-							endif;
-						?>
-				
-					<li><span class="title"><a href="<?php the_permalink()?> "
-								title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
+				<?php
+						endif;
+				?>
+					<li><span class="title"><a href="<?php the_permalink()?>" title="<?php the_title();?>"><?php echo wp_trim_words(get_the_title(), 25, '...');?></a></span><span><?php the_date();?></span></li>
 				<?php
 						if ($index % 2 == 0 || $index == $count):
 				?>
 				</ul>
 				<?php
-							endif;
-						endwhile;
-					endif;
-					wp_reset_postdata();
+						endif;
+					endwhile;
+				endif;
+				wp_reset_postdata();
 				?>
 				</div>
 			</div>

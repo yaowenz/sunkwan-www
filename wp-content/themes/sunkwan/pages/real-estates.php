@@ -16,6 +16,12 @@ jQuery(function($) {
 	<p class="main">成为一家满足客户对家与美好生活想象的百年企业</p>
 	<p class="eng">COMING FOR LIVABLE</p>
 </div>
+<div class="layout vdesktop" style="width:100%">
+	<img align="center" src="<?php echo get_template_directory_uri()?>/images/layout-desktop.jpg" width="100%" />
+</div>
+<div class="history vmobile" style="width:100%">
+	<img align="center" src="<?php echo get_template_directory_uri()?>/images/layout-mobile.jpg" width="100%" />
+</div>
 <div class="primary content real-estate">
 	<div class="article">
 		<div class="section villa">
