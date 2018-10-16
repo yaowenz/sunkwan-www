@@ -22,7 +22,7 @@ jQuery(function($) {
 <div class="history vmobile" style="width:100%">
 	<img align="center" src="<?php echo get_template_directory_uri()?>/images/layout-mobile.jpg" width="100%" />
 </div>
-<div class="primary content real-estate">
+<div class="primary content real-estate" style="display:none">
 	<div class="article">
 		<div class="section villa">
 			<div class="title">
