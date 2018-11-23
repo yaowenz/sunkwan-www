@@ -212,13 +212,19 @@ function playVideo(src) {
 			</div>
 		</li>
 		<li>
-			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-4.jpg');">
-				<a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-4.jpg');">			
 			</div>
 		</li>
 		<li>
-			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-5.jpg');">
-				<a href="<?php echo site_url('real-estate/sz-shishan')?>" target="_blank"></a>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-5.jpg');">				
+			</div>
+		</li>
+		<li>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-6.jpg');">				
+			</div>
+		</li>
+		<li>
+			<div class="bg-image"style="background-image:url('<?php echo get_template_directory_uri()?>/images/index-slide-7.jpg');">			
 			</div>
 		</li>
 		<li>
